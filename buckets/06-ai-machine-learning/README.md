@@ -1,61 +1,41 @@
-# Bucket 6 — AI & Machine Learning
+# AI & Machine Learning
 
-> Build AI/ML workflows with controlled data access, evaluation, observability and cost management.
+> Category learning tracker for AWS Master Vault. Service names and examples in this folder are AWS-specific.
 
-[← Back to AWS learning tracker](../../README.md) · [Master architecture](../../AWS-ENTERPRISE-REFERENCE-ARCHITECTURE.md) · [Portfolio projects](../../PORTFOLIO-PROJECTS.md)
+## Category architecture
 
-## Bucket tracker
+![AI & Machine Learning architecture](architecture.svg)
 
-- [ ] Explain the purpose and placement of each component.
-- [ ] Describe alternatives and decision trade-offs.
-- [ ] Explain IAM, network and data protection requirements.
-- [ ] Complete at least one hands-on lab and capture validation evidence.
-- [ ] Explain availability, failure behavior, monitoring and cost.
-- [ ] Delete lab resources and confirm cleanup.
-- [ ] Answer scenario-based interview questions.
+- [Editable category diagram](architecture.drawio)
+- [Mermaid source](architecture.mmd)
+- [Full visual library](../../VISUAL-DIAGRAMS.md)
+- [Master architecture](../../AWS-ENTERPRISE-REFERENCE-ARCHITECTURE.md)
 
-## Core topics
+## Component tracker
 
-| Topic | Purpose | Official reference |
+| Topic guide | SVG diagram | Editable draw.io |
 |---|---|---|
-| [Amazon Bedrock](../../services/amazon-bedrock.md) | Build generative AI applications using supported foundation models. | [Official docs](https://docs.aws.amazon.com/bedrock/latest/userguide/what-is-bedrock.html) |
-| [Amazon Bedrock API and SDK](../../services/amazon-bedrock-api-and-sdk.md) | Call supported model APIs with authorized SDK credentials. | [Official docs](https://docs.aws.amazon.com/bedrock/latest/userguide/getting-started-api.html) |
-| [Amazon SageMaker AI](../../services/amazon-sagemaker-ai.md) | Build, train, deploy and operate supported machine-learning models. | [Official docs](https://docs.aws.amazon.com/sagemaker/latest/dg/whatis.html) |
-| [SageMaker AI endpoints](../../services/sagemaker-ai-endpoints.md) | Serve supported models through managed endpoints. | [Official docs](https://docs.aws.amazon.com/sagemaker/latest/dg/realtime-endpoints.html) |
-| [Amazon Textract](../../services/amazon-textract.md) | Extract supported text and structured information from documents. | [Official docs](https://docs.aws.amazon.com/textract/latest/dg/what-is.html) |
-| [Amazon Rekognition](../../services/amazon-rekognition.md) | Analyze supported image and video content. | [Official docs](https://docs.aws.amazon.com/rekognition/latest/dg/what-is.html) |
-| [Amazon Comprehend](../../services/amazon-comprehend.md) | Analyze supported text for sentiment, entities and language signals. | [Official docs](https://docs.aws.amazon.com/comprehend/latest/dg/what-is.html) |
-| [Amazon Q Developer](../../services/amazon-q-developer.md) | Assist supported software development and AWS workflows. | [Official docs](https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/what-is.html) |
-| [Retrieval-augmented generation (RAG)](../../services/retrieval-augmented-generation-rag.md) | Ground model responses in authorized enterprise knowledge. | [Official docs](https://docs.aws.amazon.com/bedrock/latest/userguide/knowledge-base.html) |
-| [AI document-processing workflow](../../services/ai-document-processing-workflow.md) | Explore a sample architecture for document ingestion and analysis; validate the repository before reuse. | [Official docs](https://github.com/aws-samples/aws-ai-intelligent-document-processing) |
+| [Amazon Bedrock](../../services/amazon-bedrock.md) | [SVG](../../services/amazon-bedrock/architecture.svg) | [draw.io](../../services/amazon-bedrock/architecture.drawio) |
+| [Amazon Bedrock API and SDK](../../services/amazon-bedrock-api-and-sdk.md) | [SVG](../../services/amazon-bedrock-api-and-sdk/architecture.svg) | [draw.io](../../services/amazon-bedrock-api-and-sdk/architecture.drawio) |
+| [Amazon SageMaker AI](../../services/amazon-sagemaker-ai.md) | [SVG](../../services/amazon-sagemaker-ai/architecture.svg) | [draw.io](../../services/amazon-sagemaker-ai/architecture.drawio) |
+| [SageMaker AI endpoints](../../services/sagemaker-ai-endpoints.md) | [SVG](../../services/sagemaker-ai-endpoints/architecture.svg) | [draw.io](../../services/sagemaker-ai-endpoints/architecture.drawio) |
+| [Amazon Textract](../../services/amazon-textract.md) | [SVG](../../services/amazon-textract/architecture.svg) | [draw.io](../../services/amazon-textract/architecture.drawio) |
+| [Amazon Rekognition](../../services/amazon-rekognition.md) | [SVG](../../services/amazon-rekognition/architecture.svg) | [draw.io](../../services/amazon-rekognition/architecture.drawio) |
+| [Amazon Comprehend](../../services/amazon-comprehend.md) | [SVG](../../services/amazon-comprehend/architecture.svg) | [draw.io](../../services/amazon-comprehend/architecture.drawio) |
+| [Amazon Q Developer](../../services/amazon-q-developer.md) | [SVG](../../services/amazon-q-developer/architecture.svg) | [draw.io](../../services/amazon-q-developer/architecture.drawio) |
+| [Retrieval-augmented generation (RAG)](../../services/retrieval-augmented-generation-rag.md) | [SVG](../../services/retrieval-augmented-generation-rag/architecture.svg) | [draw.io](../../services/retrieval-augmented-generation-rag/architecture.drawio) |
+| [AI document-processing workflow](../../services/ai-document-processing-workflow.md) | [SVG](../../services/ai-document-processing-workflow/architecture.svg) | [draw.io](../../services/ai-document-processing-workflow/architecture.drawio) |
 
-## AI architecture controls
+## Practice workflow
+1. Read the official documentation for each selected service.
+2. Map its account/project boundary, identity, network and data flows.
+3. Complete a sandbox lab and capture validation evidence.
+4. Test one denied-access or failure scenario.
+5. Record cost, teardown proof and design trade-offs.
 
-- Verify model availability, quotas, data handling and pricing in the selected Region.
-- Keep prompts and retrieved documents within authorized access boundaries.
-- Do not log sensitive payloads unnecessarily; evaluate retention and redaction.
-- Evaluate output quality and failure behavior; human review may be required for consequential decisions.
-- Add budgets and teardown checks for inference endpoints and other metered resources.
-
-## Hands-on labs
-
-1. Call a supported Amazon Bedrock model through an SDK with explicit IAM permissions; verify model access, Region and pricing first.
-2. Deploy a small SageMaker AI endpoint only if needed; endpoints may accrue ongoing cost, so delete them immediately after validation.
-3. Build an S3 upload → Lambda → Textract → persistence workflow for a non-sensitive sample document.
-4. Use Comprehend to analyze sentiment or entities in sample text; record input limits, output handling and cost assumptions.
-5. Optional: build a RAG proof of concept and evaluate retrieval quality, access boundaries, citations, hallucinations and prompt injection handling.
-
-## Scenario questions
-
-1. **How would you choose between the services in this bucket?** Start with workload requirements, constraints, operational responsibility and failure tolerance. Compare two viable options and explain why one is a better fit.
-2. **How do you secure the design?** Describe identity, least privilege, network/data boundaries, encryption, logging and configuration guardrails.
-3. **How do you make the design reliable and cost-aware?** Identify failure domains, monitoring, backup/recovery requirements, scaling behavior and material cost drivers.
-4. **What would you validate before production?** Confirm current service behavior, quotas, Region availability, IAM permissions, network paths, observability, rollback and teardown.
-
-## Official learning resources
-
+## Official references
 - [AWS documentation](https://docs.aws.amazon.com/)
-- [AWS Skill Builder](https://skillbuilder.aws/)
-- [AWS samples](https://github.com/aws-samples)
-- [AWS re:Post](https://repost.aws/)
-- [AWS Free Tier and current offers](https://aws.amazon.com/free/)
+- [AWS Well-Architected Framework](https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html)
+- [AWS pricing](https://aws.amazon.com/pricing/)
+
+> Diagram files are conceptual learning resources, not production-certified designs. Validate current service capabilities, permissions, routing, quotas, regional availability and prices before deployment.
