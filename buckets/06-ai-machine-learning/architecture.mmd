@@ -1,0 +1,22 @@
+flowchart TB
+  ROOT["AWS Organizations / Account Boundary<br/>IAM • SCPs • Regions • Tags • Budgets"]
+  S0["Amazon Bedrock"]
+  S1["Amazon Bedrock API and SDK"]
+  S2["Amazon SageMaker AI"]
+  S3["SageMaker AI endpoints"]
+  S4["Amazon Textract"]
+  S5["Amazon Rekognition"]
+  S6["Amazon Comprehend"]
+  S7["Amazon Q Developer"]
+  S8["Retrieval-augmented generation (RAG)"]
+  S9["AI document-processing workflow"]
+  ROOT --> S0
+  ROOT --> S1
+  ROOT --> S2
+  ROOT --> S3
+  ROOT --> S4
+  ROOT --> S5
+  ROOT --> S6
+  ROOT --> S7
+  ROOT --> S8
+  ROOT --> S9

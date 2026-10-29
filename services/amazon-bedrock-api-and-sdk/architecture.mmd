@@ -1,0 +1,8 @@
+flowchart TB
+ ROOT["AWS Account / IAM Role / Policy"]
+ SVC["Amazon Bedrock API and SDK"]
+ SEC["Security and Network<br/>IAM / VPC / KMS / Endpoints"]
+ OPS["Operations and Cost<br/>CloudWatch / CloudTrail / Budgets"]
+ ROOT --> SVC
+ SVC --> SEC
+ SVC --> OPS

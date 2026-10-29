@@ -1,0 +1,22 @@
+flowchart TB
+  ROOT["AWS Organizations / Account Boundary<br/>IAM • SCPs • Regions • Tags • Budgets"]
+  S0["Amazon EC2"]
+  S1["EC2 Auto Scaling"]
+  S2["AWS Lambda"]
+  S3["Amazon ECS"]
+  S4["AWS Fargate"]
+  S5["Amazon ECR"]
+  S6["Amazon EKS"]
+  S7["Amazon EC2 GPU instances"]
+  S8["AWS Batch"]
+  S9["AWS App Runner"]
+  ROOT --> S0
+  ROOT --> S1
+  ROOT --> S2
+  ROOT --> S3
+  ROOT --> S4
+  ROOT --> S5
+  ROOT --> S6
+  ROOT --> S7
+  ROOT --> S8
+  ROOT --> S9

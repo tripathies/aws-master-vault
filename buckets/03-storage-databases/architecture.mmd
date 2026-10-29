@@ -1,0 +1,22 @@
+flowchart TB
+  ROOT["AWS Organizations / Account Boundary<br/>IAM • SCPs • Regions • Tags • Budgets"]
+  S0["Amazon S3"]
+  S1["Amazon EBS"]
+  S2["Amazon EFS"]
+  S3["Amazon RDS"]
+  S4["Amazon Aurora"]
+  S5["Amazon DynamoDB"]
+  S6["Amazon ElastiCache"]
+  S7["AWS Backup"]
+  S8["S3 events and Lambda"]
+  S9["AWS Database Migration Service"]
+  ROOT --> S0
+  ROOT --> S1
+  ROOT --> S2
+  ROOT --> S3
+  ROOT --> S4
+  ROOT --> S5
+  ROOT --> S6
+  ROOT --> S7
+  ROOT --> S8
+  ROOT --> S9

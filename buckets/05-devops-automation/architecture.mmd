@@ -1,0 +1,22 @@
+flowchart TB
+  ROOT["AWS Organizations / Account Boundary<br/>IAM • SCPs • Regions • Tags • Budgets"]
+  S0["AWS CloudFormation"]
+  S1["AWS CDK with Python"]
+  S2["AWS CDK with TypeScript"]
+  S3["AWS Systems Manager Session Manager"]
+  S4["AWS CodePipeline"]
+  S5["AWS CodeBuild"]
+  S6["AWS CodeDeploy"]
+  S7["Amazon EventBridge"]
+  S8["Terraform on AWS"]
+  S9["GitHub Actions with AWS OIDC"]
+  ROOT --> S0
+  ROOT --> S1
+  ROOT --> S2
+  ROOT --> S3
+  ROOT --> S4
+  ROOT --> S5
+  ROOT --> S6
+  ROOT --> S7
+  ROOT --> S8
+  ROOT --> S9

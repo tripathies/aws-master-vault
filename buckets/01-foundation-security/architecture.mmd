@@ -1,0 +1,22 @@
+flowchart TB
+  ROOT["AWS Organizations / Account Boundary<br/>IAM • SCPs • Regions • Tags • Budgets"]
+  S0["AWS account and root MFA"]
+  S1["AWS IAM roles and policies"]
+  S2["IAM service roles: EC2 to S3"]
+  S3["AWS Secrets Manager"]
+  S4["Systems Manager Parameter Store"]
+  S5["AWS Organizations and SCPs"]
+  S6["AWS Control Tower"]
+  S7["AWS Budgets and billing alarms"]
+  S8["AWS KMS"]
+  S9["AWS IAM Identity Center"]
+  ROOT --> S0
+  ROOT --> S1
+  ROOT --> S2
+  ROOT --> S3
+  ROOT --> S4
+  ROOT --> S5
+  ROOT --> S6
+  ROOT --> S7
+  ROOT --> S8
+  ROOT --> S9

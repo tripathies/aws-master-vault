@@ -1,0 +1,22 @@
+flowchart TB
+  ROOT["AWS Organizations / Account Boundary<br/>IAM • SCPs • Regions • Tags • Budgets"]
+  S0["Amazon CloudWatch metrics, logs and alarms"]
+  S1["CloudWatch dashboards"]
+  S2["AWS Cost Explorer"]
+  S3["AWS Budgets"]
+  S4["AWS CloudTrail"]
+  S5["AWS Config"]
+  S6["AWS Trusted Advisor"]
+  S7["AWS Compute Optimizer"]
+  S8["AWS Service Quotas"]
+  S9["AWS Free Tier and free offers"]
+  ROOT --> S0
+  ROOT --> S1
+  ROOT --> S2
+  ROOT --> S3
+  ROOT --> S4
+  ROOT --> S5
+  ROOT --> S6
+  ROOT --> S7
+  ROOT --> S8
+  ROOT --> S9

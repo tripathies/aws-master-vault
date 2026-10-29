@@ -1,2 +1,7 @@
 flowchart TB
- A[AWS Organizations] --> B[Accounts and VPCs]
+ ORG["AWS Organizations / Control Tower"] --> SEC["IAM Identity Center / IAM / SCPs / CloudTrail"]
+ SEC --> NET["VPC / Transit Gateway / Route 53 / PrivateLink"]
+ NET --> APP["ALB / EC2 / ECS / EKS / Lambda"]
+ APP --> DATA["S3 / EBS / EFS / RDS / DynamoDB"]
+ DATA --> OPS["CloudWatch / CloudTrail / Config / Cost Explorer"]
+ OPS --> IAC["CloudFormation / CDK / Terraform / CI-CD"]

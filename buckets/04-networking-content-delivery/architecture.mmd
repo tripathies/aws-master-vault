@@ -1,0 +1,22 @@
+flowchart TB
+  ROOT["AWS Organizations / Account Boundary<br/>IAM • SCPs • Regions • Tags • Budgets"]
+  S0["Amazon VPC"]
+  S1["Security Groups vs Network ACLs"]
+  S2["Application Load Balancer"]
+  S3["Network Load Balancer"]
+  S4["Amazon Route 53"]
+  S5["Amazon CloudFront"]
+  S6["Amazon API Gateway"]
+  S7["AWS NAT Gateway"]
+  S8["AWS Transit Gateway"]
+  S9["AWS PrivateLink and VPC endpoints"]
+  ROOT --> S0
+  ROOT --> S1
+  ROOT --> S2
+  ROOT --> S3
+  ROOT --> S4
+  ROOT --> S5
+  ROOT --> S6
+  ROOT --> S7
+  ROOT --> S8
+  ROOT --> S9
