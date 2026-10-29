@@ -21,13 +21,13 @@
 
 | Domain | Category | Topics | Tracker |
 |---|---|---:|---|
-| **01** | [Foundation & Security](buckets/01-foundation-security/README.md) | 10 | [Open tracker](#01-foundation-security) |
-| **02** | [Compute & Containers](buckets/02-compute-containers/README.md) | 10 | [Open tracker](#02-compute-containers) |
-| **03** | [Storage & Databases](buckets/03-storage-databases/README.md) | 10 | [Open tracker](#03-storage-databases) |
-| **04** | [Networking & Content Delivery](buckets/04-networking-content-delivery/README.md) | 10 | [Open tracker](#04-networking-content-delivery) |
-| **05** | [DevOps & Automation](buckets/05-devops-automation/README.md) | 10 | [Open tracker](#05-devops-automation) |
-| **06** | [AI & Machine Learning](buckets/06-ai-machine-learning/README.md) | 10 | [Open tracker](#06-ai-machine-learning) |
-| **07** | [Monitoring & Cost](buckets/07-monitoring-cost/README.md) | 10 | [Open tracker](#07-monitoring-cost) |
+| **01** | [Foundation & Security](buckets/01-foundation-security/README.md) | 10 | [Open tracker](buckets/01-foundation-security/README.md) |
+| **02** | [Compute & Containers](buckets/02-compute-containers/README.md) | 10 | [Open tracker](buckets/02-compute-containers/README.md) |
+| **03** | [Storage & Databases](buckets/03-storage-databases/README.md) | 10 | [Open tracker](buckets/03-storage-databases/README.md) |
+| **04** | [Networking & Content Delivery](buckets/04-networking-content-delivery/README.md) | 10 | [Open tracker](buckets/04-networking-content-delivery/README.md) |
+| **05** | [DevOps & Automation](buckets/05-devops-automation/README.md) | 10 | [Open tracker](buckets/05-devops-automation/README.md) |
+| **06** | [AI & Machine Learning](buckets/06-ai-machine-learning/README.md) | 10 | [Open tracker](buckets/06-ai-machine-learning/README.md) |
+| **07** | [Monitoring & Cost](buckets/07-monitoring-cost/README.md) | 10 | [Open tracker](buckets/07-monitoring-cost/README.md) |
 
 
 ## Your AWS learning tracker
