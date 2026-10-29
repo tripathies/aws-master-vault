@@ -1,0 +1,548 @@
+{
+  "name": "AWS Master Vault",
+  "version": 1,
+  "source": "User-provided 'Every AWS Service You’ll EVER Need' learning plan, organized into seven buckets and expanded with linked AWS documentation.",
+  "categories": [
+    {
+      "id": "01-foundation-security",
+      "number": 1,
+      "title": "Foundation & Security",
+      "purpose": "Establish a safe AWS account baseline, identity controls, secrets handling and account-level guardrails.",
+      "path": "buckets/01-foundation-security/README.md",
+      "components": [
+        {
+          "name": "AWS account and root MFA",
+          "purpose": "Secure the account root user; enable MFA and avoid root access keys.",
+          "official_reference": "https://docs.aws.amazon.com/accounts/latest/reference/root-user.html",
+          "path": "services/aws-account-and-root-mfa.md"
+        },
+        {
+          "name": "AWS IAM roles and policies",
+          "purpose": "Grant least-privilege access using roles, trust policies and permissions policies.",
+          "official_reference": "https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles.html",
+          "path": "services/aws-iam-roles-and-policies.md"
+        },
+        {
+          "name": "IAM service roles: EC2 to S3",
+          "purpose": "Let an EC2 workload access S3 using an instance profile instead of embedded credentials.",
+          "official_reference": "https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_use_switch-role-ec2.html",
+          "path": "services/iam-service-roles-ec2-to-s3.md"
+        },
+        {
+          "name": "AWS Secrets Manager",
+          "purpose": "Store, retrieve and rotate supported application secrets.",
+          "official_reference": "https://docs.aws.amazon.com/secretsmanager/latest/userguide/intro.html",
+          "path": "services/aws-secrets-manager.md"
+        },
+        {
+          "name": "Systems Manager Parameter Store",
+          "purpose": "Store application configuration and supported parameter types.",
+          "official_reference": "https://docs.aws.amazon.com/systems-manager/latest/userguide/systems-manager-parameter-store.html",
+          "path": "services/systems-manager-parameter-store.md"
+        },
+        {
+          "name": "AWS Organizations and SCPs",
+          "purpose": "Organize accounts and set permission guardrails across an organization.",
+          "official_reference": "https://docs.aws.amazon.com/organizations/latest/userguide/orgs_introduction.html",
+          "path": "services/aws-organizations-and-scps.md"
+        },
+        {
+          "name": "AWS Control Tower",
+          "purpose": "Establish and govern a multi-account landing zone.",
+          "official_reference": "https://docs.aws.amazon.com/controltower/latest/userguide/what-is-control-tower.html",
+          "path": "services/aws-control-tower.md"
+        },
+        {
+          "name": "AWS Budgets and billing alarms",
+          "purpose": "Create cost thresholds and notifications; alerts do not automatically stop spend.",
+          "official_reference": "https://docs.aws.amazon.com/cost-management/latest/userguide/budgets-managing-costs.html",
+          "path": "services/aws-budgets-and-billing-alarms.md"
+        },
+        {
+          "name": "AWS KMS",
+          "purpose": "Manage encryption keys and supported cryptographic operations.",
+          "official_reference": "https://docs.aws.amazon.com/kms/latest/developerguide/overview.html",
+          "path": "services/aws-kms.md"
+        },
+        {
+          "name": "AWS IAM Identity Center",
+          "purpose": "Provide centralized workforce access to accounts and supported applications.",
+          "official_reference": "https://docs.aws.amazon.com/singlesignon/latest/userguide/what-is.html",
+          "path": "services/aws-iam-identity-center.md"
+        }
+      ]
+    },
+    {
+      "id": "02-compute-containers",
+      "number": 2,
+      "title": "Compute & Containers",
+      "purpose": "Choose and operate virtual machines, functions and containers according to workload control, scaling and operational effort.",
+      "path": "buckets/02-compute-containers/README.md",
+      "components": [
+        {
+          "name": "Amazon EC2",
+          "purpose": "Run virtual machines with selected instance types, storage and network controls.",
+          "official_reference": "https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/concepts.html",
+          "path": "services/amazon-ec2.md"
+        },
+        {
+          "name": "EC2 Auto Scaling",
+          "purpose": "Maintain desired capacity and scale eligible EC2 fleets.",
+          "official_reference": "https://docs.aws.amazon.com/autoscaling/ec2/userguide/what-is-amazon-ec2-auto-scaling.html",
+          "path": "services/ec2-auto-scaling.md"
+        },
+        {
+          "name": "AWS Lambda",
+          "purpose": "Run event-driven code without managing the server fleet.",
+          "official_reference": "https://docs.aws.amazon.com/lambda/latest/dg/welcome.html",
+          "path": "services/aws-lambda.md"
+        },
+        {
+          "name": "Amazon ECS",
+          "purpose": "Orchestrate containers using AWS-native tasks and services.",
+          "official_reference": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/Welcome.html",
+          "path": "services/amazon-ecs.md"
+        },
+        {
+          "name": "AWS Fargate",
+          "purpose": "Run eligible containers without managing EC2 worker hosts.",
+          "official_reference": "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/AWS_Fargate.html",
+          "path": "services/aws-fargate.md"
+        },
+        {
+          "name": "Amazon ECR",
+          "purpose": "Store and distribute container images.",
+          "official_reference": "https://docs.aws.amazon.com/AmazonECR/latest/userguide/what-is-ecr.html",
+          "path": "services/amazon-ecr.md"
+        },
+        {
+          "name": "Amazon EKS",
+          "purpose": "Run Kubernetes workloads on AWS; understand its additional operational complexity.",
+          "official_reference": "https://docs.aws.amazon.com/eks/latest/userguide/what-is-eks.html",
+          "path": "services/amazon-eks.md"
+        },
+        {
+          "name": "Amazon EC2 GPU instances",
+          "purpose": "Evaluate accelerated compute for ML, graphics and parallel workloads.",
+          "official_reference": "https://aws.amazon.com/ec2/instance-types/",
+          "path": "services/amazon-ec2-gpu-instances.md"
+        },
+        {
+          "name": "AWS Batch",
+          "purpose": "Schedule and execute batch computing jobs.",
+          "official_reference": "https://docs.aws.amazon.com/batch/latest/userguide/what-is-batch.html",
+          "path": "services/aws-batch.md"
+        },
+        {
+          "name": "AWS App Runner",
+          "purpose": "Deploy supported web applications and APIs with managed operations.",
+          "official_reference": "https://docs.aws.amazon.com/apprunner/latest/dg/what-is-apprunner.html",
+          "path": "services/aws-app-runner.md"
+        }
+      ]
+    },
+    {
+      "id": "03-storage-databases",
+      "number": 3,
+      "title": "Storage & Databases",
+      "purpose": "Choose object, block, file, relational, key-value and caching services based on data access patterns, durability, consistency and recovery.",
+      "path": "buckets/03-storage-databases/README.md",
+      "components": [
+        {
+          "name": "Amazon S3",
+          "purpose": "Store objects with bucket policies, encryption, lifecycle and versioning controls.",
+          "official_reference": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/Welcome.html",
+          "path": "services/amazon-s3.md"
+        },
+        {
+          "name": "Amazon EBS",
+          "purpose": "Provide block storage for EC2 and supported workloads.",
+          "official_reference": "https://docs.aws.amazon.com/ebs/latest/userguide/what-is-ebs.html",
+          "path": "services/amazon-ebs.md"
+        },
+        {
+          "name": "Amazon EFS",
+          "purpose": "Provide elastic shared file storage for supported Linux workloads.",
+          "official_reference": "https://docs.aws.amazon.com/efs/latest/ug/whatisefs.html",
+          "path": "services/amazon-efs.md"
+        },
+        {
+          "name": "Amazon RDS",
+          "purpose": "Run managed relational databases.",
+          "official_reference": "https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Welcome.html",
+          "path": "services/amazon-rds.md"
+        },
+        {
+          "name": "Amazon Aurora",
+          "purpose": "Run supported cloud-optimized relational workloads.",
+          "official_reference": "https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/CHAP_AuroraOverview.html",
+          "path": "services/amazon-aurora.md"
+        },
+        {
+          "name": "Amazon DynamoDB",
+          "purpose": "Use a managed key-value and document database with access-pattern-driven design.",
+          "official_reference": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Introduction.html",
+          "path": "services/amazon-dynamodb.md"
+        },
+        {
+          "name": "Amazon ElastiCache",
+          "purpose": "Cache eligible application data to reduce latency and backend load.",
+          "official_reference": "https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/WhatIs.html",
+          "path": "services/amazon-elasticache.md"
+        },
+        {
+          "name": "AWS Backup",
+          "purpose": "Centrally manage supported backup plans and recovery points.",
+          "official_reference": "https://docs.aws.amazon.com/aws-backup/latest/devguide/whatisbackup.html",
+          "path": "services/aws-backup.md"
+        },
+        {
+          "name": "S3 events and Lambda",
+          "purpose": "Trigger processing from supported S3 object events.",
+          "official_reference": "https://docs.aws.amazon.com/lambda/latest/dg/with-s3.html",
+          "path": "services/s3-events-and-lambda.md"
+        },
+        {
+          "name": "AWS Database Migration Service",
+          "purpose": "Migrate and replicate supported databases.",
+          "official_reference": "https://docs.aws.amazon.com/dms/latest/userguide/Welcome.html",
+          "path": "services/aws-database-migration-service.md"
+        }
+      ]
+    },
+    {
+      "id": "04-networking-content-delivery",
+      "number": 4,
+      "title": "Networking & Content Delivery",
+      "purpose": "Design VPC segmentation, routing, secure ingress, DNS, hybrid connectivity and content delivery.",
+      "path": "buckets/04-networking-content-delivery/README.md",
+      "components": [
+        {
+          "name": "Amazon VPC",
+          "purpose": "Create isolated networks with address ranges, subnets, routes and gateways.",
+          "official_reference": "https://docs.aws.amazon.com/vpc/latest/userguide/what-is-amazon-vpc.html",
+          "path": "services/amazon-vpc.md"
+        },
+        {
+          "name": "Security Groups vs Network ACLs",
+          "purpose": "Distinguish stateful interface controls from stateless subnet-level rules.",
+          "official_reference": "https://docs.aws.amazon.com/vpc/latest/userguide/VPC_Security.html",
+          "path": "services/security-groups-vs-network-acls.md"
+        },
+        {
+          "name": "Application Load Balancer",
+          "purpose": "Route HTTP/HTTPS requests at Layer 7.",
+          "official_reference": "https://docs.aws.amazon.com/elasticloadbalancing/latest/application/introduction.html",
+          "path": "services/application-load-balancer.md"
+        },
+        {
+          "name": "Network Load Balancer",
+          "purpose": "Load-balance supported Layer 4 traffic.",
+          "official_reference": "https://docs.aws.amazon.com/elasticloadbalancing/latest/network/introduction.html",
+          "path": "services/network-load-balancer.md"
+        },
+        {
+          "name": "Amazon Route 53",
+          "purpose": "Host DNS zones and route queries using supported routing policies.",
+          "official_reference": "https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/Welcome.html",
+          "path": "services/amazon-route-53.md"
+        },
+        {
+          "name": "Amazon CloudFront",
+          "purpose": "Cache and deliver content and supported application traffic at edge locations.",
+          "official_reference": "https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/Introduction.html",
+          "path": "services/amazon-cloudfront.md"
+        },
+        {
+          "name": "Amazon API Gateway",
+          "purpose": "Publish and govern APIs, often integrated with Lambda.",
+          "official_reference": "https://docs.aws.amazon.com/apigateway/latest/developerguide/welcome.html",
+          "path": "services/amazon-api-gateway.md"
+        },
+        {
+          "name": "AWS NAT Gateway",
+          "purpose": "Provide outbound IPv4 connectivity from eligible private subnets.",
+          "official_reference": "https://docs.aws.amazon.com/vpc/latest/userguide/vpc-nat-gateway.html",
+          "path": "services/aws-nat-gateway.md"
+        },
+        {
+          "name": "AWS Transit Gateway",
+          "purpose": "Connect multiple VPCs and supported hybrid networks.",
+          "official_reference": "https://docs.aws.amazon.com/vpc/latest/tgw/what-is-transit-gateway.html",
+          "path": "services/aws-transit-gateway.md"
+        },
+        {
+          "name": "AWS PrivateLink and VPC endpoints",
+          "purpose": "Access supported services privately and reduce reliance on public paths.",
+          "official_reference": "https://docs.aws.amazon.com/vpc/latest/privatelink/what-is-privatelink.html",
+          "path": "services/aws-privatelink-and-vpc-endpoints.md"
+        }
+      ]
+    },
+    {
+      "id": "05-devops-automation",
+      "number": 5,
+      "title": "DevOps & Automation",
+      "purpose": "Make infrastructure repeatable, deployments controlled, access auditable and operational tasks automated.",
+      "path": "buckets/05-devops-automation/README.md",
+      "components": [
+        {
+          "name": "AWS CloudFormation",
+          "purpose": "Provision and manage AWS infrastructure declaratively.",
+          "official_reference": "https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html",
+          "path": "services/aws-cloudformation.md"
+        },
+        {
+          "name": "AWS CDK with Python",
+          "purpose": "Define supported infrastructure using Python constructs.",
+          "official_reference": "https://docs.aws.amazon.com/cdk/v2/guide/work-with-cdk-python.html",
+          "path": "services/aws-cdk-with-python.md"
+        },
+        {
+          "name": "AWS CDK with TypeScript",
+          "purpose": "Define supported infrastructure using TypeScript constructs.",
+          "official_reference": "https://docs.aws.amazon.com/cdk/v2/guide/work-with-cdk-typescript.html",
+          "path": "services/aws-cdk-with-typescript.md"
+        },
+        {
+          "name": "AWS Systems Manager Session Manager",
+          "purpose": "Access supported instances without exposing SSH/RDP ports or managing bastion hosts.",
+          "official_reference": "https://docs.aws.amazon.com/systems-manager/latest/userguide/session-manager.html",
+          "path": "services/aws-systems-manager-session-manager.md"
+        },
+        {
+          "name": "AWS CodePipeline",
+          "purpose": "Orchestrate supported continuous delivery workflows.",
+          "official_reference": "https://docs.aws.amazon.com/codepipeline/latest/userguide/welcome.html",
+          "path": "services/aws-codepipeline.md"
+        },
+        {
+          "name": "AWS CodeBuild",
+          "purpose": "Build and test application artifacts.",
+          "official_reference": "https://docs.aws.amazon.com/codebuild/latest/userguide/welcome.html",
+          "path": "services/aws-codebuild.md"
+        },
+        {
+          "name": "AWS CodeDeploy",
+          "purpose": "Deploy supported application revisions to eligible targets.",
+          "official_reference": "https://docs.aws.amazon.com/codedeploy/latest/userguide/welcome.html",
+          "path": "services/aws-codedeploy.md"
+        },
+        {
+          "name": "Amazon EventBridge",
+          "purpose": "Route events and trigger automation.",
+          "official_reference": "https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-what-is.html",
+          "path": "services/amazon-eventbridge.md"
+        },
+        {
+          "name": "Terraform on AWS",
+          "purpose": "Manage AWS infrastructure using Terraform configuration and state.",
+          "official_reference": "https://developer.hashicorp.com/terraform/tutorials/aws-get-started",
+          "path": "services/terraform-on-aws.md"
+        },
+        {
+          "name": "GitHub Actions with AWS OIDC",
+          "purpose": "Use short-lived federated credentials for CI/CD rather than long-lived keys.",
+          "official_reference": "https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_providers_create_oidc.html",
+          "path": "services/github-actions-with-aws-oidc.md"
+        }
+      ]
+    },
+    {
+      "id": "06-ai-machine-learning",
+      "number": 6,
+      "title": "AI & Machine Learning",
+      "purpose": "Build AI/ML workflows with controlled data access, evaluation, observability and cost management.",
+      "path": "buckets/06-ai-machine-learning/README.md",
+      "components": [
+        {
+          "name": "Amazon Bedrock",
+          "purpose": "Build generative AI applications using supported foundation models.",
+          "official_reference": "https://docs.aws.amazon.com/bedrock/latest/userguide/what-is-bedrock.html",
+          "path": "services/amazon-bedrock.md"
+        },
+        {
+          "name": "Amazon Bedrock API and SDK",
+          "purpose": "Call supported model APIs with authorized SDK credentials.",
+          "official_reference": "https://docs.aws.amazon.com/bedrock/latest/userguide/getting-started-api.html",
+          "path": "services/amazon-bedrock-api-and-sdk.md"
+        },
+        {
+          "name": "Amazon SageMaker AI",
+          "purpose": "Build, train, deploy and operate supported machine-learning models.",
+          "official_reference": "https://docs.aws.amazon.com/sagemaker/latest/dg/whatis.html",
+          "path": "services/amazon-sagemaker-ai.md"
+        },
+        {
+          "name": "SageMaker AI endpoints",
+          "purpose": "Serve supported models through managed endpoints.",
+          "official_reference": "https://docs.aws.amazon.com/sagemaker/latest/dg/realtime-endpoints.html",
+          "path": "services/sagemaker-ai-endpoints.md"
+        },
+        {
+          "name": "Amazon Textract",
+          "purpose": "Extract supported text and structured information from documents.",
+          "official_reference": "https://docs.aws.amazon.com/textract/latest/dg/what-is.html",
+          "path": "services/amazon-textract.md"
+        },
+        {
+          "name": "Amazon Rekognition",
+          "purpose": "Analyze supported image and video content.",
+          "official_reference": "https://docs.aws.amazon.com/rekognition/latest/dg/what-is.html",
+          "path": "services/amazon-rekognition.md"
+        },
+        {
+          "name": "Amazon Comprehend",
+          "purpose": "Analyze supported text for sentiment, entities and language signals.",
+          "official_reference": "https://docs.aws.amazon.com/comprehend/latest/dg/what-is.html",
+          "path": "services/amazon-comprehend.md"
+        },
+        {
+          "name": "Amazon Q Developer",
+          "purpose": "Assist supported software development and AWS workflows.",
+          "official_reference": "https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/what-is.html",
+          "path": "services/amazon-q-developer.md"
+        },
+        {
+          "name": "Retrieval-augmented generation (RAG)",
+          "purpose": "Ground model responses in authorized enterprise knowledge.",
+          "official_reference": "https://docs.aws.amazon.com/bedrock/latest/userguide/knowledge-base.html",
+          "path": "services/retrieval-augmented-generation-rag.md"
+        },
+        {
+          "name": "AI document-processing workflow",
+          "purpose": "Explore a sample architecture for document ingestion and analysis; validate the repository before reuse.",
+          "official_reference": "https://github.com/aws-samples/aws-ai-intelligent-document-processing",
+          "path": "services/ai-document-processing-workflow.md"
+        }
+      ]
+    },
+    {
+      "id": "07-monitoring-cost",
+      "number": 7,
+      "title": "Monitoring & Cost",
+      "purpose": "Observe health, audit actions, respond to incidents and keep usage and cost under control.",
+      "path": "buckets/07-monitoring-cost/README.md",
+      "components": [
+        {
+          "name": "Amazon CloudWatch metrics, logs and alarms",
+          "purpose": "Collect telemetry, query logs and alert on supported conditions.",
+          "official_reference": "https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/WhatIsCloudWatch.html",
+          "path": "services/amazon-cloudwatch-metrics-logs-and-alarms.md"
+        },
+        {
+          "name": "CloudWatch dashboards",
+          "purpose": "Visualize operational signals.",
+          "official_reference": "https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/CloudWatch_Dashboards.html",
+          "path": "services/cloudwatch-dashboards.md"
+        },
+        {
+          "name": "AWS Cost Explorer",
+          "purpose": "Analyze historical cost and usage.",
+          "official_reference": "https://docs.aws.amazon.com/cost-management/latest/userguide/ce-what-is.html",
+          "path": "services/aws-cost-explorer.md"
+        },
+        {
+          "name": "AWS Budgets",
+          "purpose": "Set budget thresholds and notifications.",
+          "official_reference": "https://docs.aws.amazon.com/cost-management/latest/userguide/budgets-managing-costs.html",
+          "path": "services/aws-budgets.md"
+        },
+        {
+          "name": "AWS CloudTrail",
+          "purpose": "Record supported AWS API activity for audit and investigation.",
+          "official_reference": "https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-user-guide.html",
+          "path": "services/aws-cloudtrail.md"
+        },
+        {
+          "name": "AWS Config",
+          "purpose": "Record configuration changes and evaluate supported rules.",
+          "official_reference": "https://docs.aws.amazon.com/config/latest/developerguide/WhatIsConfig.html",
+          "path": "services/aws-config.md"
+        },
+        {
+          "name": "AWS Trusted Advisor",
+          "purpose": "Review eligible best-practice checks.",
+          "official_reference": "https://docs.aws.amazon.com/awssupport/latest/user/trusted-advisor.html",
+          "path": "services/aws-trusted-advisor.md"
+        },
+        {
+          "name": "AWS Compute Optimizer",
+          "purpose": "Review supported rightsizing recommendations.",
+          "official_reference": "https://docs.aws.amazon.com/compute-optimizer/latest/ug/what-is-compute-optimizer.html",
+          "path": "services/aws-compute-optimizer.md"
+        },
+        {
+          "name": "AWS Service Quotas",
+          "purpose": "Review service quotas and request supported increases.",
+          "official_reference": "https://docs.aws.amazon.com/servicequotas/latest/userguide/intro.html",
+          "path": "services/aws-service-quotas.md"
+        },
+        {
+          "name": "AWS Free Tier and free offers",
+          "purpose": "Check current account eligibility, offer terms and usage limits before labs.",
+          "official_reference": "https://aws.amazon.com/free/",
+          "path": "services/aws-free-tier-and-free-offers.md"
+        }
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "number": 1,
+      "title": "Three-Tier Web Application",
+      "services": "VPC, ALB, EC2, RDS",
+      "goal": "Build a classic web, application and relational data architecture.",
+      "reference": "https://github.com/aws-samples/aws-three-tier-web-architecture-workshop",
+      "path": "PORTFOLIO-PROJECTS.md"
+    },
+    {
+      "number": 2,
+      "title": "Serverless REST API",
+      "services": "API Gateway, Lambda, DynamoDB",
+      "goal": "Build a serverless backend with CRUD operations and controlled access.",
+      "reference": "https://github.com/aws-samples/serverless-samples",
+      "path": "PORTFOLIO-PROJECTS.md"
+    },
+    {
+      "number": 3,
+      "title": "CI/CD Pipeline",
+      "services": "CodePipeline, CodeBuild, ECR, ECS",
+      "goal": "Automate build, image publication and application deployment.",
+      "reference": "https://github.com/krishnaik06/AWS-CI-CD-Projects",
+      "path": "PORTFOLIO-PROJECTS.md"
+    },
+    {
+      "number": 4,
+      "title": "Event-Driven File Processing",
+      "services": "S3, Lambda, EventBridge, SNS, Step Functions",
+      "goal": "Process uploaded files asynchronously with clear retry and failure behavior.",
+      "reference": "https://docs.aws.amazon.com/lambda/latest/dg/concepts-event-driven-architectures.html",
+      "path": "PORTFOLIO-PROJECTS.md"
+    },
+    {
+      "number": 5,
+      "title": "AI Document Analysis",
+      "services": "S3, Lambda, Textract, Comprehend, DynamoDB",
+      "goal": "Extract document content and enrich it with supported text analysis.",
+      "reference": "https://github.com/aws-samples/aws-ai-intelligent-document-processing",
+      "path": "PORTFOLIO-PROJECTS.md"
+    },
+    {
+      "number": 6,
+      "title": "Infrastructure as Code with CDK",
+      "services": "VPC, ECS, RDS, ALB",
+      "goal": "Define a repeatable application environment entirely as code.",
+      "reference": "https://github.com/aws/aws-cdk",
+      "path": "PORTFOLIO-PROJECTS.md"
+    },
+    {
+      "number": 7,
+      "title": "AI Chatbot with Bedrock",
+      "services": "API Gateway, Lambda, Bedrock, DynamoDB, S3, CloudFront",
+      "goal": "Build an end-to-end generative AI app; extend to RAG only when required.",
+      "reference": "https://github.com/aws-samples/bedrock-chat",
+      "path": "PORTFOLIO-PROJECTS.md"
+    }
+  ]
+}

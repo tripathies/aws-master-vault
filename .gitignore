@@ -1,0 +1,13 @@
+# AWS credentials and local configuration
+.aws/
+.env
+.env.*
+*.pem
+*.key
+terraform.tfstate
+terraform.tfstate.*
+.terraform/
+cdk.out/
+node_modules/
+__pycache__/
+*.pyc
