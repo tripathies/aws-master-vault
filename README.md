@@ -1,17 +1,34 @@
 # AWS Master Vault
 
-> **AWS Solution Architect Learning Portal** — a hands-on roadmap from first-account security to enterprise architecture, delivery automation and AI.
+> **AWS Solution Architect learning portal** — track your learning, explore the enterprise reference design, and open focused guides for cloud-native topics.
 
-![AWS](https://img.shields.io/badge/AWS-Solution%20Architect-232F3E?style=for-the-badge&logo=amazonaws&logoColor=FF9900)
-![Learning path](https://img.shields.io/badge/Learning%20path-7%20buckets-FF9900?style=for-the-badge)
-![Portfolio](https://img.shields.io/badge/Portfolio-7%20projects-146EB4?style=for-the-badge)
+[![Learning tracker](https://img.shields.io/badge/Learning%20tracker-open%20checklist-FF9900?style=for-the-badge)](#your-aws-learning-tracker)
+[![Reference architecture](https://img.shields.io/badge/Reference%20architecture-open%20design-107C10?style=for-the-badge)](AWS-ENTERPRISE-REFERENCE-ARCHITECTURE.md)
+[![Visual library](https://img.shields.io/badge/Diagrams-SVG%20%7C%20draw.io-7F56D9?style=for-the-badge)](VISUAL-DIAGRAMS.md)
 
 ## Start here
 
-| Learning tracker | Enterprise architecture | Portfolio projects |
+| <div align="center">📚 Learning tracker</div> | <div align="center">🏗️ End-to-end design</div> | <div align="center">🗺️ Diagram library</div> |
 |---|---|---|
-| Seven practical learning buckets; every topic links to its guide. | Multi-account, multi-AZ reference pattern with security, networking, application, data and operations. | Seven hands-on projects that turn service knowledge into portfolio evidence. |
-| [Start learning ↓](#your-aws-learning-tracker) | [Master design](AWS-ENTERPRISE-REFERENCE-ARCHITECTURE.md) | [Project roadmap](PORTFOLIO-PROJECTS.md) |
+| Work through the catalogue by category. Each topic links to its guide. | Explore how governance, identity, networking, workloads, data, security and operations fit together. | Preview architecture diagrams and open editable draw.io sources. |
+| [**Track topics below ↓**](#your-aws-learning-tracker) | [**Open reference design →**](AWS-ENTERPRISE-REFERENCE-ARCHITECTURE.md) | [**Open visual library →**](VISUAL-DIAGRAMS.md) |
+
+![AWS Master Vault architecture overview](architecture.svg)
+
+## Catalogue overview
+
+**Catalogue size:** 70 service/topic guides across 7 learning categories.
+
+| Domain | Category | Topics | Tracker |
+|---|---|---:|---|
+| **01** | [Foundation & Security](buckets/01-foundation-security/README.md) | 10 | [Open tracker](#01-foundation-security) |
+| **02** | [Compute & Containers](buckets/02-compute-containers/README.md) | 10 | [Open tracker](#02-compute-containers) |
+| **03** | [Storage & Databases](buckets/03-storage-databases/README.md) | 10 | [Open tracker](#03-storage-databases) |
+| **04** | [Networking & Content Delivery](buckets/04-networking-content-delivery/README.md) | 10 | [Open tracker](#04-networking-content-delivery) |
+| **05** | [DevOps & Automation](buckets/05-devops-automation/README.md) | 10 | [Open tracker](#05-devops-automation) |
+| **06** | [AI & Machine Learning](buckets/06-ai-machine-learning/README.md) | 10 | [Open tracker](#06-ai-machine-learning) |
+| **07** | [Monitoring & Cost](buckets/07-monitoring-cost/README.md) | 10 | [Open tracker](#07-monitoring-cost) |
+
 
 ## Your AWS learning tracker
 
