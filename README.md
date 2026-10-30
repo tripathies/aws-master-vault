@@ -199,3 +199,14 @@ Progress checkboxes are Markdown checklist items, not a synced personal dashboar
 - Private subnets do not automatically provide private access to every AWS service; validate routes, endpoints, DNS and IAM.
 - Every lab must include validation and teardown. NAT Gateways, load balancers, EC2, RDS, EKS, public IPv4, logging and AI inference can incur charges.
 - Treat all examples as learning references; validate service behavior and security in a non-production account.
+
+## Licensing and permitted use
+
+This vault is provided for personal learning, research, and other permitted noncommercial purposes.
+
+- Original documentation, learning notes, explanations, and diagrams: [CC BY-NC 4.0](LICENSE-DOCS.md).
+- Code, scripts, automation, templates, configuration, and infrastructure-as-code: [PolyForm Noncommercial 1.0.0](LICENSE-CODE.md).
+- **Commercial or business use is not permitted without prior written permission.** This includes use in business/organisational operations, paid training or consulting deliverables, commercial resale or redistribution, commercial hosting/managed services, and incorporation into commercial products or services.
+- Third-party provider documentation, trademarks, screenshots, excerpts, logos, icons, fonts, images, dependencies, and SDKs are excluded and remain subject to their original terms.
+
+This is source-available, not OSI-approved open source. See the licence files for the full terms and scope.
