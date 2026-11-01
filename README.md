@@ -15,6 +15,67 @@
 
 ![AWS Master Vault architecture overview](architecture.svg)
 
+## Hands-on implementation project — Escanor
+
+The Vault is the **AWS theory and service knowledge base**. It also includes a runnable, hands-on AWS workload: [**Escanor — AWS Learning Workload**](projects/escanor/README.md).
+
+Escanor is a deliberately small AWS application and infrastructure project. It connects the service guides in this Vault to working Python application code and Terraform, so a learner can clone the repository, authenticate to a personal AWS account, review the infrastructure plan, build the workload, test AWS services and clean up afterwards.
+
+The learning-lab profile includes:
+- **Compute:** Amazon Linux 2023 on a small EC2 instance.
+- **Database:** PostgreSQL on a small, private Amazon RDS instance.
+- **Object storage:** private S3 bucket with encryption and versioning.
+- **Networking:** VPC, public application subnet, private database subnets, Internet Gateway and security groups.
+- **Private connectivity:** S3 Gateway Endpoint and Systems Manager interface endpoints using AWS PrivateLink.
+- **Identity and access:** EC2 instance profile, scoped IAM permissions, RDS IAM database authentication and Systems Manager Session Manager.
+- **Application:** Python Flask app to write/read database records and upload, read, list and inspect S3 object versions.
+- **Automation:** Terraform, local validation scripts, GitHub Actions CI and an AWS CodeBuild buildspec.
+
+The project includes a structured [Low-Level Design (LLD)](projects/escanor/lld/README.md) covering vision, scope, requirements, detailed solution design, identity, security, monitoring, operations, FinOps, resilience, disaster recovery and implementation validation. The LLD clearly distinguishes the small runnable lab from the larger Escanor AIOps architecture roadmap.
+
+> **Scope and safety:** Escanor is a low-footprint, non-production learning lab, not a production landing zone or a production AIOps platform. The default EC2 host has no inbound security-group rules; operators use Session Manager port forwarding. RDS is private. The lab is not guaranteed to be free: EC2, RDS, public IPv4, interface endpoints, storage and requests may incur charges. No AWS resources are created by cloning the repository or running CI.
+
+### Getting started
+
+Clone the AWS Vault and open the Escanor project:
+
+~~~bash
+git clone https://github.com/tripathies/aws-master-vault.git
+cd aws-master-vault
+cd projects/escanor
+~~~
+
+Follow the complete [Getting Started guide](projects/escanor/docs/getting-started.md) for AWS CLI v2 and IAM Identity Center login, account verification with STS, Terraform state-bucket bootstrap, plan review, apply, application access through Session Manager, validation and teardown.
+
+### Explore the implementation
+
+| Area | Project material |
+|---|---|
+| Workload overview and architecture | [Escanor project README](projects/escanor/README.md) |
+| Full low-level design | [Escanor LLD](projects/escanor/lld/README.md) |
+| Terraform infrastructure | [Terraform implementation](projects/escanor/infra/README.md) |
+| Clone, authenticate, build, test and destroy | [Getting Started](projects/escanor/docs/getting-started.md) |
+| Acceptance tests and evidence | [Validation checklist](projects/escanor/docs/validation.md) |
+| GitHub Actions and AWS CodeBuild | [Build pipeline](projects/escanor/buildspec.yml) · [CodeBuild guide](projects/escanor/docs/codebuild.md) |
+
+### Dependency map — learn AWS through Escanor
+
+~~~mermaid
+flowchart TD
+  A["AWS account and IAM Identity Center"] --> B["VPC, subnets and route tables"]
+  B --> C["EC2 and Systems Manager access"]
+  B --> D["Private RDS PostgreSQL"]
+  B --> E["S3 Gateway Endpoint and S3 bucket"]
+  C --> F["EC2 instance profile and IAM policies"]
+  F --> D
+  F --> E
+  D --> G["Python application — database read/write"]
+  E --> H["Python application — object upload/read/versioning"]
+  G --> I["Validate, observe and destroy"]
+  H --> I
+~~~
+
+
 ## Catalogue overview
 
 **Catalogue size:** 70 service/topic guides across 7 learning categories.
