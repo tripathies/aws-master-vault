@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="t d">
+<title id="t">AWS Architecture Playbook</title>
+<desc id="d">Conceptual AWS enterprise reference architecture with multi-account governance, identity and security, global ingress, multi-AZ workloads, data, events, observability and multi-Region recovery.</desc>
+<defs>
+ <linearGradient id="bg" x2="1" y2="1"><stop stop-color="#101827"/><stop offset=".55" stop-color="#1c2534"/><stop offset="1" stop-color="#080f1c"/></linearGradient>
+ <linearGradient id="gold" x2="0" y2="1"><stop stop-color="#ffe6a1"/><stop offset=".48" stop-color="#ffb02e"/><stop offset="1" stop-color="#d66b00"/></linearGradient>
+ <linearGradient id="panel" x2="1" y2="1"><stop stop-color="#26364a"/><stop offset="1" stop-color="#111d2d"/></linearGradient>
+ <pattern id="grid" width="44" height="44" patternUnits="userSpaceOnUse"><path d="M44 0H0V44" fill="none" stroke="#ffad32" stroke-opacity=".10"/></pattern>
+ <marker id="arr" markerWidth="9" markerHeight="9" refX="7" refY="4" orient="auto"><path d="M0 0L8 4L0 8" fill="none" stroke="#ffc15b" stroke-width="1.5"/></marker>
+ <style>
+ text{font-family:Arial,Helvetica,sans-serif}.sec{font-size:18px;font-weight:800;letter-spacing:1px}.h{font-size:19px;font-weight:700;fill:#fff}.s{font-size:15px;fill:#d3e0ed}.muted{font-size:13px;fill:#aebfd0}.flow{fill:none;stroke:#ffbd55;stroke-width:2.4;marker-end:url(#arr)}
+ </style>
+</defs>
+<rect width="1600" height="900" fill="url(#bg)"/><rect width="1600" height="900" fill="url(#grid)"/>
+<g opacity=".13" fill="none" stroke="#ffb13b"><circle cx="1400" cy="70" r="290" stroke-dasharray="3 14"/><circle cx="1400" cy="70" r="235" stroke-dasharray="3 14"/></g>
+<!-- Brand -->
+<text x="58" y="94" font-size="88" font-weight="900" letter-spacing="3" fill="url(#gold)">AWS</text>
+<text x="350" y="92" font-size="58" font-weight="900" fill="#f4f7fb">ARCHITECTURE</text>
+<text x="920" y="92" font-size="62" font-weight="900" fill="#fff">PLAYBOOK</text>
+<text x="64" y="148" font-size="29" font-weight="700" fill="#fff">From Cloud Fundamentals to</text>
+<text x="540" y="148" font-size="29" font-weight="700" fill="#ffc15b">Enterprise-Grade Architecture</text>
+<rect x="1110" y="119" width="430" height="48" rx="24" fill="#332515" stroke="#ffb13b" stroke-width="2"/>
+<text x="1325" y="150" text-anchor="middle" font-size="17" font-weight="800" letter-spacing="1.2" fill="#fff0cf">DESIGN  •  BUILD  •  SECURE  •  AUTOMATE</text>
+<text x="66" y="190" font-size="14" letter-spacing="3" fill="#dca95d">OPEN-SOURCE AWS LEARNING &amp; IMPLEMENTATION PLAYBOOK</text>
+<!-- Global entry -->
+<rect x="48" y="218" width="1504" height="86" rx="15" fill="#17283a" stroke="#f5a623" stroke-width="2"/>
+<text x="72" y="244" class="sec" fill="#ffd27b">01  GLOBAL ENTRY &amp; TRAFFIC MANAGEMENT</text>
+<rect x="72" y="256" width="420" height="37" rx="8" fill="url(#panel)" stroke="#f5a623"/><text x="282" y="280" text-anchor="middle" class="h">Amazon Route 53 • DNS / Health Checks</text>
+<path d="M500 275H555" class="flow"/>
+<rect x="570" y="256" width="450" height="37" rx="8" fill="url(#panel)" stroke="#f5a623"/><text x="795" y="280" text-anchor="middle" class="h">Amazon CloudFront • AWS WAF • TLS</text>
+<path d="M1028 275H1080" class="flow"/>
+<rect x="1095" y="256" width="430" height="37" rx="8" fill="url(#panel)" stroke="#f5a623"/><text x="1310" y="280" text-anchor="middle" class="h">Regional ALB / API Gateway ingress</text>
+<!-- Organizations -->
+<rect x="48" y="319" width="1504" height="104" rx="15" fill="#342919" stroke="#f5a623" stroke-width="2"/>
+<text x="72" y="346" class="sec" fill="#ffcf76">02  AWS ORGANIZATIONS • LANDING ZONE • ACCOUNT BOUNDARIES</text>
+<rect x="72" y="359" width="340" height="50" rx="8" fill="#26364a" stroke="#e8a83c"/><text x="242" y="380" text-anchor="middle" class="h">AWS Organizations</text><text x="242" y="399" text-anchor="middle" class="muted">OUs • SCP guardrails • consolidated billing</text>
+<rect x="430" y="359" width="340" height="50" rx="8" fill="#26364a" stroke="#e8a83c"/><text x="600" y="380" text-anchor="middle" class="h">AWS Control Tower</text><text x="600" y="399" text-anchor="middle" class="muted">Landing zone • account factory • controls</text>
+<rect x="788" y="359" width="340" height="50" rx="8" fill="#26364a" stroke="#e8a83c"/><text x="958" y="380" text-anchor="middle" class="h">Security &amp; Log Archive Accounts</text><text x="958" y="399" text-anchor="middle" class="muted">Central audit • delegated security services</text>
+<rect x="1146" y="359" width="379" height="50" rx="8" fill="#26364a" stroke="#e8a83c"/><text x="1335" y="380" text-anchor="middle" class="h">Workload / Shared Services Accounts</text><text x="1335" y="399" text-anchor="middle" class="muted">Dev • Test • Production • Network</text>
+<!-- Shared security strip -->
+<rect x="48" y="438" width="1504" height="86" rx="15" fill="#14283c" stroke="#6e9dbb" stroke-width="1.7"/>
+<text x="72" y="464" class="sec" fill="#b9dcf4">03  SHARED IDENTITY • SECURITY • OPERATIONS</text>
+<rect x="72" y="476" width="350" height="37" rx="8" fill="#1c3a53" stroke="#76bce5"/><text x="247" y="500" text-anchor="middle" class="h">IAM Identity Center • IAM Roles</text>
+<rect x="438" y="476" width="350" height="37" rx="8" fill="#1c3a53" stroke="#76bce5"/><text x="613" y="500" text-anchor="middle" class="h">KMS • Secrets Manager • ACM</text>
+<rect x="804" y="476" width="350" height="37" rx="8" fill="#1c3a53" stroke="#76bce5"/><text x="979" y="500" text-anchor="middle" class="h">CloudTrail • AWS Config • GuardDuty</text>
+<rect x="1170" y="476" width="355" height="37" rx="8" fill="#1c3a53" stroke="#76bce5"/><text x="1347" y="500" text-anchor="middle" class="h">Security Hub • CloudWatch • Budgets</text>
+<!-- Primary region -->
+<rect x="48" y="539" width="990" height="300" rx="16" fill="#132b3b" stroke="#ffb13b" stroke-width="2.4"/>
+<path d="M64 539H1022Q1038 539 1038 555V580H48V555Q48 539 64 539Z" fill="#604017"/>
+<text x="72" y="567" font-size="21" font-weight="800" fill="#fff1cf">04  PRIMARY REGION • MULTI-AZ WORKLOAD VPC</text>
+<text x="1015" y="566" text-anchor="end" font-size="14" font-weight="700" fill="#ffd27b">PRIVATE SUBNETS • ROUTED NETWORK</text>
+<!-- AZ boxes -->
+<rect x="70" y="593" width="445" height="158" rx="12" fill="#17283a" stroke="#7ca8c6" stroke-dasharray="7 5"/><text x="90" y="619" class="sec" fill="#c4e7ff">AVAILABILITY ZONE A</text>
+<rect x="535" y="593" width="480" height="158" rx="12" fill="#17283a" stroke="#7ca8c6" stroke-dasharray="7 5"/><text x="555" y="619" class="sec" fill="#c4e7ff">AVAILABILITY ZONE B</text>
+<rect x="88" y="632" width="195" height="100" rx="9" fill="#243d53" stroke="#f5a623"/><text x="185" y="658" text-anchor="middle" class="h">Public / Ingress</text><text x="185" y="682" text-anchor="middle" class="s">ALB • NAT Gateway*</text><text x="185" y="708" text-anchor="middle" class="muted">Only where required</text>
+<rect x="300" y="632" width="195" height="100" rx="9" fill="#243d53" stroke="#f5a623"/><text x="397" y="658" text-anchor="middle" class="h">Private App Tier</text><text x="397" y="682" text-anchor="middle" class="s">EC2 • ECS / Fargate</text><text x="397" y="708" text-anchor="middle" class="muted">EKS optional pattern</text>
+<rect x="553" y="632" width="195" height="100" rx="9" fill="#243d53" stroke="#f5a623"/><text x="650" y="658" text-anchor="middle" class="h">Private App Tier</text><text x="650" y="682" text-anchor="middle" class="s">EC2 • ECS / Fargate</text><text x="650" y="708" text-anchor="middle" class="muted">Spread across AZs</text>
+<rect x="765" y="632" width="250" height="100" rx="9" fill="#243d53" stroke="#f5a623"/><text x="890" y="658" text-anchor="middle" class="h">Private Data Tier</text><text x="890" y="682" text-anchor="middle" class="s">RDS / Aurora Multi-AZ</text><text x="890" y="708" text-anchor="middle" class="muted">DynamoDB • S3</text>
+<text x="72" y="779" class="s">VPC • Route Tables • Security Groups • Network ACLs • VPC Endpoints / AWS PrivateLink</text>
+<text x="72" y="811" class="s">Events &amp; integration: SQS • SNS • EventBridge • Lambda • Step Functions</text>
+<!-- Recovery region -->
+<rect x="1060" y="539" width="492" height="300" rx="16" fill="#202943" stroke="#a6a0ff" stroke-width="2.4"/>
+<path d="M1076 539H1536Q1552 539 1552 555V580H1060V555Q1060 539 1076 539Z" fill="#3b3d70"/>
+<text x="1082" y="567" font-size="20" font-weight="800" fill="#f0efff">05  RECOVERY REGION</text>
+<rect x="1084" y="600" width="444" height="72" rx="9" fill="#292f50" stroke="#a6a0ff"/><text x="1306" y="628" text-anchor="middle" class="h">Standby / Rebuild Compute</text><text x="1306" y="652" text-anchor="middle" class="s">EC2 • ECS • EKS as workload requires</text>
+<rect x="1084" y="686" width="444" height="62" rx="9" fill="#292f50" stroke="#a6a0ff"/><text x="1306" y="712" text-anchor="middle" class="h">Data Protection &amp; Replication</text><text x="1306" y="735" text-anchor="middle" class="s">S3 CRR • RDS snapshots / replicas • AWS Backup</text>
+<rect x="1084" y="761" width="444" height="55" rx="9" fill="#292f50" stroke="#a6a0ff"/><text x="1306" y="784" text-anchor="middle" class="h">Route 53 Failover • Recovery Runbooks</text><text x="1306" y="803" text-anchor="middle" class="muted">RTO / RPO defined and tested per workload</text>
+<path d="M1039 695H1055" class="flow"/>
+<!-- Footer -->
+<text x="800" y="870" text-anchor="middle" font-size="15" font-weight="700" fill="#ffcf76">DESIGN FOR FAILURE • LEAST PRIVILEGE • AUTOMATE SAFELY • MEASURE COST</text>
+<text x="800" y="892" text-anchor="middle" font-size="12" fill="#b4c3d3">CONCEPTUAL REFERENCE • SERVICE CHOICES, REGION SUPPORT, SECURITY CONTROLS AND RECOVERY TARGETS MUST BE VALIDATED BEFORE IMPLEMENTATION</text>
+</svg>
