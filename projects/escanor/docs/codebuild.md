@@ -10,7 +10,7 @@ Both paths run application unit tests and Terraform static validation. Neither p
 
 The file is:
 
-`aws-master-reference/projects/escanor/buildspec.yml`
+`projects/escanor/buildspec.yml`
 
 When creating a CodeBuild project from the AWS Vault repository, set the Buildspec name to this repository-relative path.
 
@@ -24,7 +24,7 @@ When creating a CodeBuild project from the AWS Vault repository, set the Buildsp
 | Environment compute | Small build environment |
 | Privileged mode | Off |
 | Service role | Build-only role; no deployment permissions |
-| Buildspec | `aws-master-reference/projects/escanor/buildspec.yml` |
+| Buildspec | `projects/escanor/buildspec.yml` |
 | Artifacts | None required for the static validation workflow |
 | VPC | Do not attach a VPC for this build-only job unless the organization requires it; dependency downloads need outbound HTTPS |
 
