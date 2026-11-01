@@ -3,12 +3,12 @@ name: AWS Escanor — Build and Validate
 on:
   pull_request:
     paths:
-      - "aws-master-reference/**"
+      - "projects/escanor/**"
       - ".github/workflows/aws-escanor-ci.yml"
   push:
     branches: [main]
     paths:
-      - "aws-master-reference/**"
+      - "projects/escanor/**"
       - ".github/workflows/aws-escanor-ci.yml"
   workflow_dispatch:
 
@@ -25,7 +25,7 @@ jobs:
     runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory: aws-master-reference/projects/escanor/app
+        working-directory: projects/escanor/app
     steps:
       - name: Checkout
         uses: actions/checkout@v7
@@ -34,7 +34,7 @@ jobs:
         with:
           python-version: "3.11"
           cache: pip
-          cache-dependency-path: aws-master-reference/projects/escanor/app/requirements.txt
+          cache-dependency-path: projects/escanor/app/requirements.txt
       - name: Install application dependencies
         run: python -m pip install --disable-pip-version-check -r requirements.txt
       - name: Compile Python sources and helper scripts
@@ -53,7 +53,7 @@ jobs:
     runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory: aws-master-reference/projects/escanor/infra/terraform
+        working-directory: projects/escanor/infra/terraform
     steps:
       - name: Checkout
         uses: actions/checkout@v7
