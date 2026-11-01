@@ -1,8 +1,8 @@
-# AWS Master Vault
+# Cloud Architecture Playbook
 
 ![AWS Architecture Playbook — enterprise reference architecture](assets/aws-architecture-playbook-cover.svg)
 
-> **AWS Solution Architect learning portal** — track your learning, explore the enterprise reference design, and open focused guides for cloud-native topics.
+> **AWS Edition** — From Cloud Fundamentals to Enterprise-Grade Architecture. An open-source Solution Architect learning portal with service guides, reference architecture, diagrams and hands-on implementation projects.
 
 [![Learning tracker](https://img.shields.io/badge/Learning%20tracker-open%20checklist-FF9900?style=for-the-badge)](#your-aws-learning-tracker)
 [![Reference architecture](https://img.shields.io/badge/Reference%20architecture-open%20design-107C10?style=for-the-badge)](AWS-ENTERPRISE-REFERENCE-ARCHITECTURE.md)
