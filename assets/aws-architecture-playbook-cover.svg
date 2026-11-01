@@ -57,7 +57,8 @@
 <rect x="553" y="632" width="195" height="100" rx="9" fill="#243d53" stroke="#f5a623"/><text x="650" y="658" text-anchor="middle" class="h">Private App Tier</text><text x="650" y="682" text-anchor="middle" class="s">EC2 • ECS / Fargate</text><text x="650" y="708" text-anchor="middle" class="muted">Spread across AZs</text>
 <rect x="765" y="632" width="250" height="100" rx="9" fill="#243d53" stroke="#f5a623"/><text x="890" y="658" text-anchor="middle" class="h">Private Data Tier</text><text x="890" y="682" text-anchor="middle" class="s">RDS / Aurora Multi-AZ</text><text x="890" y="708" text-anchor="middle" class="muted">DynamoDB • S3</text>
 <text x="72" y="779" class="s">VPC • Route Tables • Security Groups • Network ACLs • VPC Endpoints / AWS PrivateLink</text>
-<text x="72" y="811" class="s">Events &amp; integration: SQS • SNS • EventBridge • Lambda • Step Functions</text>
+<text x="72" y="811" class="s">Events: SQS • SNS • EventBridge • Lambda • Step Functions</text>
+<text x="72" y="831" class="s">Optional AI / ML account: Amazon Bedrock • Amazon SageMaker • governed data access</text>
 <!-- Recovery region -->
 <rect x="1060" y="539" width="492" height="300" rx="16" fill="#202943" stroke="#a6a0ff" stroke-width="2.4"/>
 <path d="M1076 539H1536Q1552 539 1552 555V580H1060V555Q1060 539 1076 539Z" fill="#3b3d70"/>
