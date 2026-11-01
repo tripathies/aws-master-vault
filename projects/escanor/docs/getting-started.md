@@ -34,13 +34,13 @@ Install the Session Manager plugin if your AWS CLI installation does not already
 ## 3. Clone the AWS Vault
 
 ```bash
-git clone https://github.com/tripathies/azure-master-vault.git
-cd azure-master-vault
+git clone https://github.com/tripathies/aws-master-vault.git
+cd aws-master-vault
 ```
 
 The project is under:
 ```text
-aws-master-reference/projects/escanor/
+projects/escanor/
 ```
 
 ## 4. Sign in and verify the AWS account
@@ -64,7 +64,7 @@ Verify the active identity before creating anything:
 
 ```bash
 aws sts get-caller-identity
-bash aws-master-reference/projects/escanor/scripts/aws-preflight.sh
+bash projects/escanor/scripts/aws-preflight.sh
 ```
 
 Do not continue if the account ID or assumed role is unexpected. Prefer a dedicated non-production AWS member account. Do not use the Organizations management, Log Archive or Audit / Security Tooling account.
@@ -74,7 +74,7 @@ Do not continue if the account ID or assumed role is unexpected. Prefer a dedica
 The workload Terraform state is stored in a separate S3 bucket with versioning, encryption and public-access blocking. Bootstrap it once:
 
 ```bash
-cd aws-master-reference/projects/escanor
+cd projects/escanor
 bash scripts/bootstrap-state-backend.sh
 ```
 
