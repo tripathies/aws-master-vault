@@ -7,7 +7,7 @@
 
 ## 1. Purpose
 
-Escanor is the first hands-on workload inside the AWS Master Reference. It gives a reader a repeatable way to learn AWS networking, compute, identity, storage, databases, private connectivity, Terraform and CI validation without starting with a large EKS platform.
+Escanor is the first hands-on workload inside the AWS Master Vault. It gives a reader a repeatable way to learn AWS networking, compute, identity, storage, databases, private connectivity, Terraform and CI validation without starting with a large EKS platform.
 
 The **learning lab profile** uses:
 - One small Amazon Linux 2023 EC2 instance (`t3.micro` by default).
