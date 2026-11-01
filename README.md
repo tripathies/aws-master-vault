@@ -1,5 +1,7 @@
 # AWS Master Vault
 
+![AWS Architecture Playbook — enterprise reference architecture](assets/aws-architecture-playbook-cover.svg)
+
 > **AWS Solution Architect learning portal** — track your learning, explore the enterprise reference design, and open focused guides for cloud-native topics.
 
 [![Learning tracker](https://img.shields.io/badge/Learning%20tracker-open%20checklist-FF9900?style=for-the-badge)](#your-aws-learning-tracker)
