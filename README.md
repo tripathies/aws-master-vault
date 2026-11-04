@@ -4,11 +4,9 @@
 
 > **AWS Edition** — From Cloud Fundamentals to Enterprise-Grade Architecture. An open-source Solution Architect learning portal with service guides, reference architecture, diagrams and hands-on implementation projects.
 
-[![Learning tracker](https://img.shields.io/badge/Learning%20tracker-open%20checklist-FF9900?style=for-the-badge)](#your-aws-learning-tracker)
+[![Interactive learning tracker](https://img.shields.io/badge/Learning%20tracker-interactive%20milestones-FF9900?style=for-the-badge)](https://tripathies.github.io/aws-master-vault/)
 [![Reference architecture](https://img.shields.io/badge/Reference%20architecture-open%20design-107C10?style=for-the-badge)](AWS-ENTERPRISE-REFERENCE-ARCHITECTURE.md)
 [![Visual library](https://img.shields.io/badge/Diagrams-SVG%20%7C%20draw.io-7F56D9?style=for-the-badge)](VISUAL-DIAGRAMS.md)
-
-## Start here
 
 ## AWS component catalogue mind map
 
