@@ -29,7 +29,7 @@
  <rect x="510" y="243" width="465" height="145" rx="18" fill="#FFFFFF" stroke="#D98200" stroke-width="2.3" filter="url(#shadow)"/>
  <rect x="524" y="257" width="105" height="105" rx="19" fill="#D98200" opacity=".09" stroke="#D98200" stroke-width="1.6"/>
  <g transform="translate(548 279)"><path fill="none" stroke="#D98200" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" d="M22 64h56a17 17 0 0 0 0-34 26 26 0 0 0-50-5 20 20 0 0 0-6 39Z"/><path fill="none" stroke="#D98200" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" d="M35 75h35"/></g>
- <text x="647" y="288" class="category" font-size="23">Cloud Foundations &amp; Landing Zones</text>
+ <text x="647" y="283" class="category" font-size="20"><tspan x="647" dy="0">Cloud Foundations &amp;</tspan><tspan x="647" dy="25">Landing Zones</tspan></text>
  <rect x="647" y="329" width="138" height="29" rx="14" fill="#E7F3FC" stroke="#B8D9F0" stroke-width="1"/>
  <text x="716" y="349" text-anchor="middle" class="count">10 TOPICS</text>
  <path d="M975 307 H985" stroke="#D98200" stroke-width="2.6" fill="none"/>
@@ -58,7 +58,7 @@
  <rect x="510" y="407" width="465" height="145" rx="18" fill="#FFFFFF" stroke="#D94841" stroke-width="2.3" filter="url(#shadow)"/>
  <rect x="524" y="421" width="105" height="105" rx="19" fill="#D94841" opacity=".09" stroke="#D94841" stroke-width="1.6"/>
  <g transform="translate(548 443)"><rect fill="none" stroke="#D94841" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" x="13" y="20" width="74" height="58" rx="9"/><circle fill="none" stroke="#D94841" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" cx="36" cy="42" r="10"/><path fill="none" stroke="#D94841" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" d="M20 67c2-10 9-15 16-15s14 5 16 15M61 38h17M61 52h17M61 66h11"/></g>
- <text x="647" y="452" class="category" font-size="23">Identity &amp; Access Management</text>
+ <text x="647" y="447" class="category" font-size="20"><tspan x="647" dy="0">Identity &amp; Access</tspan><tspan x="647" dy="25">Management</tspan></text>
  <rect x="647" y="493" width="138" height="29" rx="14" fill="#E7F3FC" stroke="#B8D9F0" stroke-width="1"/>
  <text x="716" y="513" text-anchor="middle" class="count">8 TOPICS</text>
  <path d="M975 471 H985" stroke="#D94841" stroke-width="2.6" fill="none"/>
@@ -83,7 +83,7 @@
  <rect x="510" y="571" width="465" height="145" rx="18" fill="#FFFFFF" stroke="#6653C8" stroke-width="2.3" filter="url(#shadow)"/>
  <rect x="524" y="585" width="105" height="105" rx="19" fill="#6653C8" opacity=".09" stroke="#6653C8" stroke-width="1.6"/>
  <g transform="translate(548 607)"><path fill="none" stroke="#6653C8" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" d="M50 50 23 25M50 50 78 25M50 50 23 78M50 50 78 78"/><circle fill="none" stroke="#6653C8" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" cx="50" cy="50" r="11"/><circle fill="none" stroke="#6653C8" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" cx="21" cy="21" r="9"/><circle fill="none" stroke="#6653C8" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" cx="79" cy="21" r="9"/><circle fill="none" stroke="#6653C8" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" cx="21" cy="79" r="9"/><circle fill="none" stroke="#6653C8" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" cx="79" cy="79" r="9"/></g>
- <text x="647" y="616" class="category" font-size="23">Networking &amp; Connectivity</text>
+ <text x="647" y="611" class="category" font-size="20"><tspan x="647" dy="0">Networking &amp;</tspan><tspan x="647" dy="25">Connectivity</tspan></text>
  <rect x="647" y="657" width="138" height="29" rx="14" fill="#E7F3FC" stroke="#B8D9F0" stroke-width="1"/>
  <text x="716" y="677" text-anchor="middle" class="count">12 TOPICS</text>
  <path d="M975 635 H985" stroke="#6653C8" stroke-width="2.6" fill="none"/>
@@ -116,7 +116,7 @@
  <rect x="510" y="735" width="465" height="145" rx="18" fill="#FFFFFF" stroke="#D97706" stroke-width="2.3" filter="url(#shadow)"/>
  <rect x="524" y="749" width="105" height="105" rx="19" fill="#D97706" opacity=".09" stroke="#D97706" stroke-width="1.6"/>
  <g transform="translate(548 771)"><circle fill="none" stroke="#D97706" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" cx="50" cy="50" r="12"/><path fill="none" stroke="#D97706" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" d="M50 38V18M50 62v20M38 50H18M62 50h20"/><path fill="none" stroke="#D97706" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" d="m41 24 9-9 9 9M41 76l9 9 9-9M24 41l-9 9 9 9M76 41l9 9-9 9"/></g>
- <text x="647" y="780" class="category" font-size="23">Traffic Management &amp; Delivery</text>
+ <text x="647" y="775" class="category" font-size="20"><tspan x="647" dy="0">Traffic Management &amp;</tspan><tspan x="647" dy="25">Delivery</tspan></text>
  <rect x="647" y="821" width="138" height="29" rx="14" fill="#E7F3FC" stroke="#B8D9F0" stroke-width="1"/>
  <text x="716" y="841" text-anchor="middle" class="count">8 TOPICS</text>
  <path d="M975 799 H985" stroke="#D97706" stroke-width="2.6" fill="none"/>
@@ -141,7 +141,7 @@
  <rect x="510" y="899" width="465" height="145" rx="18" fill="#FFFFFF" stroke="#E28A17" stroke-width="2.3" filter="url(#shadow)"/>
  <rect x="524" y="913" width="105" height="105" rx="19" fill="#E28A17" opacity=".09" stroke="#E28A17" stroke-width="1.6"/>
  <g transform="translate(548 935)"><rect fill="none" stroke="#E28A17" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" x="25" y="25" width="50" height="50" rx="7"/><rect fill="none" stroke="#E28A17" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" x="38" y="38" width="24" height="24" rx="3"/><path fill="none" stroke="#E28A17" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" d="M35 12v13M50 12v13M65 12v13M35 75v13M50 75v13M65 75v13M12 35h13M12 50h13M12 65h13M75 35h13M75 50h13M75 65h13"/></g>
- <text x="647" y="944" class="category" font-size="23">Compute &amp; Application Hosting</text>
+ <text x="647" y="939" class="category" font-size="20"><tspan x="647" dy="0">Compute &amp; Application</tspan><tspan x="647" dy="25">Hosting</tspan></text>
  <rect x="647" y="985" width="138" height="29" rx="14" fill="#E7F3FC" stroke="#B8D9F0" stroke-width="1"/>
  <text x="716" y="1005" text-anchor="middle" class="count">8 TOPICS</text>
  <path d="M975 963 H985" stroke="#E28A17" stroke-width="2.6" fill="none"/>
@@ -166,7 +166,7 @@
  <rect x="510" y="1063" width="465" height="145" rx="18" fill="#FFFFFF" stroke="#2563B8" stroke-width="2.3" filter="url(#shadow)"/>
  <rect x="524" y="1077" width="105" height="105" rx="19" fill="#2563B8" opacity=".09" stroke="#2563B8" stroke-width="1.6"/>
  <g transform="translate(548 1099)"><path fill="none" stroke="#2563B8" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" d="m50 10 35 20v40L50 90 15 70V30z"/><path fill="none" stroke="#2563B8" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" d="m15 30 35 21 35-21M50 51v39"/></g>
- <text x="647" y="1108" class="category" font-size="23">Containers &amp; Kubernetes</text>
+ <text x="647" y="1103" class="category" font-size="20"><tspan x="647" dy="0">Containers &amp;</tspan><tspan x="647" dy="25">Kubernetes</tspan></text>
  <rect x="647" y="1149" width="138" height="29" rx="14" fill="#E7F3FC" stroke="#B8D9F0" stroke-width="1"/>
  <text x="716" y="1169" text-anchor="middle" class="count">6 TOPICS</text>
  <path d="M975 1127 H985" stroke="#2563B8" stroke-width="2.6" fill="none"/>
@@ -187,7 +187,7 @@
  <rect x="510" y="1227" width="465" height="145" rx="18" fill="#FFFFFF" stroke="#27934B" stroke-width="2.3" filter="url(#shadow)"/>
  <rect x="524" y="1241" width="105" height="105" rx="19" fill="#27934B" opacity=".09" stroke="#27934B" stroke-width="1.6"/>
  <g transform="translate(548 1263)"><path fill="none" stroke="#27934B" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" d="M22 24h56l-5 58H27z"/><path fill="none" stroke="#27934B" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" d="M22 24c0 9 56 9 56 0M27 52c10 8 36 8 46 0"/></g>
- <text x="647" y="1272" class="category" font-size="23">Storage &amp; Enterprise File Services</text>
+ <text x="647" y="1267" class="category" font-size="20"><tspan x="647" dy="0">Storage &amp; Enterprise</tspan><tspan x="647" dy="25">File Services</tspan></text>
  <rect x="647" y="1313" width="138" height="29" rx="14" fill="#E7F3FC" stroke="#B8D9F0" stroke-width="1"/>
  <text x="716" y="1333" text-anchor="middle" class="count">8 TOPICS</text>
  <path d="M975 1291 H985" stroke="#27934B" stroke-width="2.6" fill="none"/>
@@ -212,7 +212,7 @@
  <rect x="510" y="1391" width="465" height="145" rx="18" fill="#FFFFFF" stroke="#2463B8" stroke-width="2.3" filter="url(#shadow)"/>
  <rect x="524" y="1405" width="105" height="105" rx="19" fill="#2463B8" opacity=".09" stroke="#2463B8" stroke-width="1.6"/>
  <g transform="translate(548 1427)"><ellipse fill="none" stroke="#2463B8" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" cx="50" cy="22" rx="31" ry="12"/><path fill="none" stroke="#2463B8" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" d="M19 22v52c0 16 62 16 62 0V22"/><path fill="none" stroke="#2463B8" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" d="M19 48c0 16 62 16 62 0"/></g>
- <text x="647" y="1436" class="category" font-size="23">Databases &amp; Data Platforms</text>
+ <text x="647" y="1431" class="category" font-size="20"><tspan x="647" dy="0">Databases &amp; Data</tspan><tspan x="647" dy="25">Platforms</tspan></text>
  <rect x="647" y="1477" width="138" height="29" rx="14" fill="#E7F3FC" stroke="#B8D9F0" stroke-width="1"/>
  <text x="716" y="1497" text-anchor="middle" class="count">10 TOPICS</text>
  <path d="M975 1455 H985" stroke="#2463B8" stroke-width="2.6" fill="none"/>
@@ -241,7 +241,7 @@
  <rect x="510" y="1555" width="465" height="145" rx="18" fill="#FFFFFF" stroke="#B83280" stroke-width="2.3" filter="url(#shadow)"/>
  <rect x="524" y="1569" width="105" height="105" rx="19" fill="#B83280" opacity=".09" stroke="#B83280" stroke-width="1.6"/>
  <g transform="translate(548 1591)"><circle fill="none" stroke="#B83280" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" cx="20" cy="50" r="9"/><circle fill="none" stroke="#B83280" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" cx="80" cy="25" r="9"/><circle fill="none" stroke="#B83280" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" cx="80" cy="75" r="9"/><path fill="none" stroke="#B83280" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" d="M29 50h18c16 0 17-25 24-25M47 50c16 0 17 25 24 25"/><path fill="none" stroke="#B83280" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" d="m64 17 8 8-8 8M64 67l8 8-8 8"/></g>
- <text x="647" y="1600" class="category" font-size="23">Integration &amp; API Management</text>
+ <text x="647" y="1595" class="category" font-size="20"><tspan x="647" dy="0">Integration &amp; API</tspan><tspan x="647" dy="25">Management</tspan></text>
  <rect x="647" y="1641" width="138" height="29" rx="14" fill="#E7F3FC" stroke="#B8D9F0" stroke-width="1"/>
  <text x="716" y="1661" text-anchor="middle" class="count">6 TOPICS</text>
  <path d="M975 1619 H985" stroke="#B83280" stroke-width="2.6" fill="none"/>
@@ -262,7 +262,7 @@
  <rect x="510" y="1719" width="465" height="145" rx="18" fill="#FFFFFF" stroke="#CE3444" stroke-width="2.3" filter="url(#shadow)"/>
  <rect x="524" y="1733" width="105" height="105" rx="19" fill="#CE3444" opacity=".09" stroke="#CE3444" stroke-width="1.6"/>
  <g transform="translate(548 1755)"><path fill="none" stroke="#CE3444" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" d="M50 10 82 22v25c0 21-13 34-32 43-19-9-32-22-32-43V22z"/><path fill="none" stroke="#CE3444" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" d="m34 50 11 11 22-24"/></g>
- <text x="647" y="1764" class="category" font-size="23">Security, Secrets &amp; Governance</text>
+ <text x="647" y="1759" class="category" font-size="20"><tspan x="647" dy="0">Security, Secrets &amp;</tspan><tspan x="647" dy="25">Governance</tspan></text>
  <rect x="647" y="1805" width="138" height="29" rx="14" fill="#E7F3FC" stroke="#B8D9F0" stroke-width="1"/>
  <text x="716" y="1825" text-anchor="middle" class="count">8 TOPICS</text>
  <path d="M975 1783 H985" stroke="#CE3444" stroke-width="2.6" fill="none"/>
@@ -287,7 +287,7 @@
  <rect x="510" y="1883" width="465" height="145" rx="18" fill="#FFFFFF" stroke="#1680B9" stroke-width="2.3" filter="url(#shadow)"/>
  <rect x="524" y="1897" width="105" height="105" rx="19" fill="#1680B9" opacity=".09" stroke="#1680B9" stroke-width="1.6"/>
  <g transform="translate(548 1919)"><path fill="none" stroke="#1680B9" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" d="M15 82V18M15 82h72"/><rect fill="none" stroke="#1680B9" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" x="25" y="52" width="12" height="30" rx="2"/><rect fill="none" stroke="#1680B9" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" x="48" y="37" width="12" height="45" rx="2"/><rect fill="none" stroke="#1680B9" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" x="71" y="20" width="12" height="62" rx="2"/></g>
- <text x="647" y="1928" class="category" font-size="23">Monitoring, Operations &amp; Cost</text>
+ <text x="647" y="1923" class="category" font-size="20"><tspan x="647" dy="0">Monitoring, Operations</tspan><tspan x="647" dy="25">&amp; Cost</tspan></text>
  <rect x="647" y="1969" width="138" height="29" rx="14" fill="#E7F3FC" stroke="#B8D9F0" stroke-width="1"/>
  <text x="716" y="1989" text-anchor="middle" class="count">10 TOPICS</text>
  <path d="M975 1947 H985" stroke="#1680B9" stroke-width="2.6" fill="none"/>
@@ -316,7 +316,7 @@
  <rect x="510" y="2047" width="465" height="145" rx="18" fill="#FFFFFF" stroke="#6A45C4" stroke-width="2.3" filter="url(#shadow)"/>
  <rect x="524" y="2061" width="105" height="105" rx="19" fill="#6A45C4" opacity=".09" stroke="#6A45C4" stroke-width="1.6"/>
  <g transform="translate(548 2083)"><path fill="none" stroke="#6A45C4" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" d="M50 50C35 25 15 25 15 45c0 18 19 30 35 5 16-25 35-25 35-5 0 18-19 30-35 5"/><path fill="none" stroke="#6A45C4" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" d="M30 50h-8M78 50h-8"/></g>
- <text x="647" y="2092" class="category" font-size="23">DevOps, IaC, Migration &amp; Hybrid Management</text>
+ <text x="647" y="2087" class="category" font-size="20"><tspan x="647" dy="0">DevOps, IaC, Migration</tspan><tspan x="647" dy="25">&amp; Hybrid Management</tspan></text>
  <rect x="647" y="2133" width="138" height="29" rx="14" fill="#E7F3FC" stroke="#B8D9F0" stroke-width="1"/>
  <text x="716" y="2153" text-anchor="middle" class="count">6 TOPICS</text>
  <path d="M975 2111 H985" stroke="#6A45C4" stroke-width="2.6" fill="none"/>
@@ -337,7 +337,7 @@
  <rect x="510" y="2211" width="465" height="145" rx="18" fill="#FFFFFF" stroke="#A43AB2" stroke-width="2.3" filter="url(#shadow)"/>
  <rect x="524" y="2225" width="105" height="105" rx="19" fill="#A43AB2" opacity=".09" stroke="#A43AB2" stroke-width="1.6"/>
  <g transform="translate(548 2247)"><path fill="none" stroke="#A43AB2" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" d="M50 10 82 22v25c0 21-13 34-32 43-19-9-32-22-32-43V22z"/><path fill="none" stroke="#A43AB2" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" d="m35 50 10 10 20-22"/><path fill="none" stroke="#A43AB2" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" d="M73 19a31 31 0 0 1 11 25M84 44l-1-12m1 12-12-1"/></g>
- <text x="647" y="2256" class="category" font-size="23">Business Continuity, Backup &amp; Disaster Recovery</text>
+ <text x="647" y="2251" class="category" font-size="20"><tspan x="647" dy="0">Business Continuity,</tspan><tspan x="647" dy="25">Backup &amp; Disaster Recovery</tspan></text>
  <rect x="647" y="2297" width="138" height="29" rx="14" fill="#E7F3FC" stroke="#B8D9F0" stroke-width="1"/>
  <text x="716" y="2317" text-anchor="middle" class="count">7 TOPICS</text>
  <path d="M975 2275 H985" stroke="#A43AB2" stroke-width="2.6" fill="none"/>
@@ -360,39 +360,8 @@
  <rect x="510" y="2375" width="465" height="145" rx="18" fill="#FFFFFF" stroke="#008C87" stroke-width="2.3" filter="url(#shadow)"/>
  <rect x="524" y="2389" width="105" height="105" rx="19" fill="#008C87" opacity=".09" stroke="#008C87" stroke-width="1.6"/>
  <g transform="translate(548 2411)"><rect fill="none" stroke="#008C87" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" x="28" y="28" width="44" height="44" rx="9"/><path fill="none" stroke="#008C87" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" d="M39 42h22M39 54h22M50 28V16M50 72v12M28 50H16M72 50h12M36 28l-8-8M64 28l8-8M36 72l-8 8M64 72l8 8"/><circle fill="none" stroke="#008C87" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" cx="50" cy="50" r="6"/></g>
- <text x="647" y="2420" class="category" font-size="23">AI Platform &amp; Engineering</text>
+ <text x="647" y="2415" class="category" font-size="20"><tspan x="647" dy="0">AI Platform &amp;</tspan><tspan x="647" dy="25">Engineering</tspan></text>
  <rect x="647" y="2461" width="138" height="29" rx="14" fill="#E7F3FC" stroke="#B8D9F0" stroke-width="1"/>
  <text x="716" y="2481" text-anchor="middle" class="count">13 TOPICS</text>
  <path d="M975 2439 H985" stroke="#008C87" stroke-width="2.6" fill="none"/>
- <rect x="1000" y="2375" width="1930" height="145" rx="18" fill="#FFFFFF" stroke="#008C87" stroke-width="2.1" filter="url(#shadow)"/>
- <text x="1020" y="2391" class="panelmeta">SERVICE &amp; ARCHITECTURE CATALOGUE</text><rect x="1017.0" y="2403" width="305.2" height="43" rx="10" fill="#FBFDFF" stroke="#D6E1EA" stroke-width="1.2"/>
-  <circle cx="1034.0" cy="2424.5" r="5" fill="#008C87"/>
-  <text x="1175.6" y="2430" text-anchor="middle" class="chip">Amazon Bedrock</text><rect x="1335.2" y="2403" width="305.2" height="43" rx="10" fill="#FBFDFF" stroke="#D6E1EA" stroke-width="1.2"/>
-  <circle cx="1352.2" cy="2424.5" r="5" fill="#008C87"/>
-  <text x="1493.8" y="2430" text-anchor="middle" class="chip">Amazon SageMaker AI</text><rect x="1653.3" y="2403" width="305.2" height="43" rx="10" fill="#FBFDFF" stroke="#D6E1EA" stroke-width="1.2"/>
-  <circle cx="1670.3" cy="2424.5" r="5" fill="#008C87"/>
-  <text x="1811.9" y="2430" text-anchor="middle" class="chip">Amazon Rekognition</text><rect x="1971.5" y="2403" width="305.2" height="43" rx="10" fill="#FBFDFF" stroke="#D6E1EA" stroke-width="1.2"/>
-  <circle cx="1988.5" cy="2424.5" r="5" fill="#008C87"/>
-  <text x="2130.1" y="2430" text-anchor="middle" class="chip">Amazon Comprehend</text><rect x="2289.7" y="2403" width="305.2" height="43" rx="10" fill="#FBFDFF" stroke="#D6E1EA" stroke-width="1.2"/>
-  <circle cx="2306.7" cy="2424.5" r="5" fill="#008C87"/>
-  <text x="2448.3" y="2430" text-anchor="middle" class="chip">Amazon Lex</text><rect x="2607.8" y="2403" width="305.2" height="43" rx="10" fill="#FBFDFF" stroke="#D6E1EA" stroke-width="1.2"/>
-  <circle cx="2624.8" cy="2424.5" r="5" fill="#008C87"/>
-  <text x="2766.4" y="2430" text-anchor="middle" class="chip">Amazon Polly</text><rect x="1017.0" y="2458" width="305.2" height="43" rx="10" fill="#FBFDFF" stroke="#D6E1EA" stroke-width="1.2"/>
-  <circle cx="1034.0" cy="2479.5" r="5" fill="#008C87"/>
-  <text x="1175.6" y="2485" text-anchor="middle" class="chip">Amazon Transcribe</text><rect x="1335.2" y="2458" width="305.2" height="43" rx="10" fill="#FBFDFF" stroke="#D6E1EA" stroke-width="1.2"/>
-  <circle cx="1352.2" cy="2479.5" r="5" fill="#008C87"/>
-  <text x="1493.8" y="2485" text-anchor="middle" class="chip">Amazon Textract</text><rect x="1653.3" y="2458" width="305.2" height="43" rx="10" fill="#FBFDFF" stroke="#D6E1EA" stroke-width="1.2"/>
-  <circle cx="1670.3" cy="2479.5" r="5" fill="#008C87"/>
-  <text x="1811.9" y="2485" text-anchor="middle" class="chip">Amazon Q Business</text><rect x="1971.5" y="2458" width="305.2" height="43" rx="10" fill="#FBFDFF" stroke="#D6E1EA" stroke-width="1.2"/>
-  <circle cx="1988.5" cy="2479.5" r="5" fill="#008C87"/>
-  <text x="2130.1" y="2485" text-anchor="middle" class="chip">Amazon Q Developer</text><rect x="2289.7" y="2458" width="305.2" height="43" rx="10" fill="#FBFDFF" stroke="#D6E1EA" stroke-width="1.2"/>
-  <circle cx="2306.7" cy="2479.5" r="5" fill="#008C87"/>
-  <text x="2448.3" y="2485" text-anchor="middle" class="chip">Knowledge Bases &amp; RAG</text><rect x="2607.8" y="2458" width="305.2" height="43" rx="10" fill="#FBFDFF" stroke="#D6E1EA" stroke-width="1.2"/>
-  <circle cx="2624.8" cy="2479.5" r="5" fill="#008C87"/>
-  <text x="2766.4" y="2485" text-anchor="middle" class="chip">Agents for Amazon Bedrock</text><rect x="1017.0" y="2513" width="305.2" height="43" rx="10" fill="#FBFDFF" stroke="#D6E1EA" stroke-width="1.2"/>
-  <circle cx="1034.0" cy="2534.5" r="5" fill="#008C87"/>
-  <text x="1175.6" y="2540" text-anchor="middle" class="chip">Guardrails, Evaluations &amp; Observability</text><rect x="60" y="2588" width="2880" height="112" rx="28" fill="#FFFFFF" stroke="#FF9900" stroke-width="2.4"/>
-<rect x="82" y="2607" width="300" height="72" rx="36" fill="url(#orange)"/><text x="232" y="2654" text-anchor="middle" font-family="Segoe UI,Arial" font-size="26" font-weight="800" fill="#FFFFFF">WHAT YOU’LL GAIN</text>
-<text x="435" y="2652" class="footer">Complete AWS Service Catalogue</text><text x="1010" y="2652" class="footer">Architecture Patterns</text><text x="1450" y="2652" class="footer">Security &amp; Governance</text><text x="1900" y="2652" class="footer">DevOps &amp; Migration</text><text x="2350" y="2652" class="footer">Resilience &amp; AI Engineering</text>
-<text x="1500" y="2775" text-anchor="middle" class="hubsub">Created by Rahul Tripathi • AWS Master Vault</text>
-</svg>
+ <rect x="1000" y="2375" width="1930" height="145" rx="18" fill="#FFFFFF" stroke="#008C87" stroke-width="2.1" filter="url(#shadow)"/><text x="1020" y="2391" class="panelmeta">AI PLATFORM &amp; ENGINEERING • 13 TOPICS</text><rect x="1017.0" y="2403" width="263.1" height="43" rx="10" fill="#FBFDFF" stroke="#D6E1EA" stroke-width="1.2"/><circle cx="1033.0" cy="2424.5" r="5" fill="#008C87"/><text x="1153.6" y="2430" text-anchor="middle" class="chip" font-size="16">Amazon Bedrock</text><rect x="1289.1" y="2403" width="263.1" height="43" rx="10" fill="#FBFDFF" stroke="#D6E1EA" stroke-width="1.2"/><circle cx="1305.1" cy="2424.5" r="5" fill="#008C87"/><text x="1425.7" y="2430" text-anchor="middle" class="chip" font-size="16">Amazon SageMaker AI</text><rect x="1561.3" y="2403" width="263.1" height="43" rx="10" fill="#FBFDFF" stroke="#D6E1EA" stroke-width="1.2"/><circle cx="1577.3" cy="2424.5" r="5" fill="#008C87"/><text x="1697.9" y="2430" text-anchor="middle" class="chip" font-size="16">Amazon Rekognition</text><rect x="1833.4" y="2403" width="263.1" height="43" rx="10" fill="#FBFDFF" stroke="#D6E1EA" stroke-width="1.2"/><circle cx="1849.4" cy="2424.5" r="5" fill="#008C87"/><text x="1970.0" y="2430" text-anchor="middle" class="chip" font-size="16">Amazon Comprehend</text><rect x="2105.6" y="2403" width="263.1" height="43" rx="10" fill="#FBFDFF" stroke="#D6E1EA" stroke-width="1.2"/><circle cx="2121.6" cy="2424.5" r="5" fill="#008C87"/><text x="2242.1" y="2430" text-anchor="middle" class="chip" font-size="16">Amazon Lex</text><rect x="2377.7" y="2403" width="263.1" height="43" rx="10" fill="#FBFDFF" stroke="#D6E1EA" stroke-width="1.2"/><circle cx="2393.7" cy="2424.5" r="5" fill="#008C87"/><text x="2514.3" y="2430" text-anchor="middle" class="chip" font-size="16">Amazon Polly</text><rect x="2649.9" y="2403" width="263.1" height="43" rx="10" fill="#FBFDFF" stroke="#D6E1EA" stroke-width="1.2"/><circle cx="2665.9" cy="2424.5" r="5" fill="#008C87"/><text x="2786.4" y="2430" text-anchor="middle" class="chip" font-size="16">Amazon Transcribe</text><rect x="1017.0" y="2458" width="263.1" height="43" rx="10" fill="#FBFDFF" stroke="#D6E1EA" stroke-width="1.2"/><circle cx="1033.0" cy="2479.5" r="5" fill="#008C87"/><text x="1153.6" y="2485" text-anchor="middle" class="chip" font-size="16">Amazon Textract</text><rect x="1289.1" y="2458" width="263.1" height="43" rx="10" fill="#FBFDFF" stroke="#D6E1EA" stroke-width="1.2"/><circle cx="1305.1" cy="2479.5" r="5" fill="#008C87"/><text x="1425.7" y="2485" text-anchor="middle" class="chip" font-size="16">Amazon Q Business</text><rect x="1561.3" y="2458" width="263.1" height="43" rx="10" fill="#FBFDFF" stroke="#D6E1EA" stroke-width="1.2"/><circle cx="1577.3" cy="2479.5" r="5" fill="#008C87"/><text x="1697.9" y="2485" text-anchor="middle" class="chip" font-size="16">Amazon Q Developer</text><rect x="1833.4" y="2458" width="263.1" height="43" rx="10" fill="#FBFDFF" stroke="#D6E1EA" stroke-width="1.2"/><circle cx="1849.4" cy="2479.5" r="5" fill="#008C87"/><text x="1970.0" y="2485" text-anchor="middle" class="chip" font-size="16">Knowledge Bases &amp; RAG</text><rect x="2105.6" y="2458" width="263.1" height="43" rx="10" fill="#FBFDFF" stroke="#D6E1EA" stroke-width="1.2"/><circle cx="2121.6" cy="2479.5" r="5" fill="#008C87"/><text x="2242.1" y="2485" text-anchor="middle" class="chip" font-size="16">Agents for Amazon Bedrock</text><rect x="2377.7" y="2458" width="263.1" height="43" rx="10" fill="#FBFDFF" stroke="#D6E1EA" stroke-width="1.2"/><circle cx="2393.7" cy="2479.5" r="5" fill="#008C87"/><text x="2514.3" y="2485" text-anchor="middle" class="chip" font-size="14">Guardrails, Evaluations &amp; Observability</text></svg>
