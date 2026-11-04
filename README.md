@@ -10,6 +10,18 @@
 
 ## Start here
 
+## AWS component catalogue mind map
+
+The master visual index is available in **SVG format** and can be opened directly in a browser or imported into a diagram editor.
+
+![AWS Cloud Mindmap — AWS Master Vault](AWS-COMPONENT-MINDMAP.svg)
+
+- [Open the AWS component mind map (SVG)](AWS-COMPONENT-MINDMAP.svg)
+- [Browse the machine-readable catalogue](catalog.json)
+
+The mind map establishes the A–N domain model: foundations, identity, networking, traffic delivery, compute, containers, storage, data platforms, integration, security, operations and cost, DevOps and migration, business continuity and disaster recovery, and AI engineering. L, M and N are separate domains by design. The existing learning guides and Escanor lab remain available while the catalogue is expanded and reconciled against this model.
+
+
 | <div align="center">📚 Learning tracker</div> | <div align="center">🏗️ End-to-end design</div> | <div align="center">🗺️ Diagram library</div> |
 |---|---|---|
 | Work through the catalogue by category. Each topic links to its guide. | Explore how governance, identity, networking, workloads, data, security and operations fit together. | Preview architecture diagrams and open editable draw.io sources. |
