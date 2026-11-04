@@ -4,8 +4,8 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="theme-color" content="#101b2b">
-<meta name="description" content="Interactive AWS learning progress tracker with seven catalogue milestones and seventy linked topic guides.">
-<title>AWS Learning Progress | Cloud Architecture Playbook</title>
+<meta name="description" content="One integrated AWS learning catalogue with a live progress board, seven catalogues and seventy linked topic guides.">
+<title>AWS Learning Catalogue | Cloud Architecture Playbook</title>
 <style>
 :root{
  color-scheme:dark;--bg:#0b1421;--surface:#111f31;--surface-2:#17283d;--surface-3:#1d314a;
@@ -123,9 +123,9 @@ h1{font-size:clamp(2.15rem,5vw,3.35rem);letter-spacing:-.045em;line-height:1.06;
 
  <section class="hero">
   <div>
-   <div class="eyebrow">Your learning journey</div>
-   <h1>AWS Learning Progress</h1>
-   <p class="intro">Track your progress across seven learning catalogues. Complete topic guides, validate your understanding, and move each milestone to completion.</p>
+   <div class="eyebrow">One integrated learning experience</div>
+   <h1>AWS Learning Catalogue</h1>
+   <p class="intro">The progress board and all 70 learning topics are together on this page. Check off a topic as you complete its guide; the overall progress and its catalogue milestone update automatically.</p>
   </div>
   <div class="hero-note">70 topics · 7 milestones</div>
  </section>
@@ -157,14 +157,14 @@ h1{font-size:clamp(2.15rem,5vw,3.35rem);letter-spacing:-.045em;line-height:1.06;
 
  <section class="milestone-section" aria-labelledby="milestoneHeading">
   <div class="section-heading">
-   <div><h2 id="milestoneHeading">Catalogue milestones</h2><p>Select a milestone to jump to its topic checklist.</p></div>
+   <div><h2 id="milestoneHeading">Catalogue milestones</h2><p>Each milestone reflects the completion of its 10 topics below. Select one to jump to that catalogue.</p></div>
   </div>
   <div class="milestone-grid" id="milestoneGrid"></div>
  </section>
 
  <section class="catalogue-section" id="catalogueSection" aria-labelledby="catalogueHeading">
   <div class="catalogue-toolbar">
-   <div><h2 id="catalogueHeading">Your learning catalogues</h2><p>Expand a catalogue, check completed topics, or open a guide for the full explanation.</p></div>
+   <div><h2 id="catalogueHeading">Your learning catalogues</h2><p>Expand a catalogue, mark topics complete, or open a detailed guide. Your progress updates above as you go.</p></div>
    <div class="controls">
     <label class="search-wrap"><span class="search-icon" aria-hidden="true">⌕</span><input id="searchInput" type="search" placeholder="Search all 70 topics…" aria-label="Search learning topics"></label>
     <select class="select" id="statusFilter" aria-label="Filter topics by completion">
@@ -344,7 +344,7 @@ document.getElementById("resetProgress").addEventListener("click",()=>{
  Object.keys(state).forEach(key=>delete state[key]);persist();render();showToast("Learning progress has been reset.");
 });
 document.getElementById("exportProgress").addEventListener("click",()=>{
- const payload={product:"AWS Master Vault Learning Tracker",version:1,exportedAt:new Date().toISOString(),completed:state};
+ const payload={product:"AWS Master Vault Integrated Learning Catalogue",version:1,exportedAt:new Date().toISOString(),completed:state};
  const blob=new Blob([JSON.stringify(payload,null,2)],{type:"application/json"});
  const url=URL.createObjectURL(blob),a=document.createElement("a");
  a.href=url;a.download="aws-learning-progress.json";document.body.append(a);a.click();a.remove();URL.revokeObjectURL(url);
