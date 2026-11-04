@@ -15,12 +15,12 @@
 The master visual index is available as a **self-contained SVG** and an **editable diagrams.net source**. It uses official AWS Architecture service icons for the domain anchors and full service names instead of alphabet-only markers.
 
 <p align="center">
-  <a href="AWS-COMPONENT-MINDMAP.svg">
-    <img src="AWS-COMPONENT-MINDMAP.svg" alt="AWS Cloud Mindmap showing all 14 named AWS catalogue domains and 120 topics with official AWS Architecture icons" width="100%" />
+  <a href="assets/aws-component-mindmap.svg">
+    <img src="assets/aws-component-mindmap.svg" alt="AWS Cloud Mindmap — all 14 named AWS catalogue domains and 120 topics, using official AWS Architecture icons" width="100%" />
   </a>
 </p>
 
-- [Open the AWS component mind map (SVG)](AWS-COMPONENT-MINDMAP.svg)
+- [Open the AWS component mind map (SVG)](assets/aws-component-mindmap.svg)
 - [Edit the mind map in diagrams.net (draw.io)](AWS-COMPONENT-MINDMAP.drawio)
 - [Browse the machine-readable catalogue](catalog.json)
 
