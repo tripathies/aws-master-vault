@@ -33,21 +33,137 @@ The master visual index is available as a **self-contained SVG** and an **editab
 
 ## Your AWS learning tracker
 
-Track progress across the seven catalogue milestones and all 70 learning topics in the interactive tracker.
+**Learning loop:** understand the purpose and trade-offs → inspect the diagram → complete a lab → validate the result → clean up resources → explain the design.
 
-**[Open the AWS learning tracker →](https://tripathies.github.io/aws-master-vault/)**
+Use the [**interactive learning tracker →**](https://tripathies.github.io/aws-master-vault/) to record topic completion and monitor the overall progress bar. Each of the seven catalogue milestones turns complete when all ten topics in that catalogue are checked. Progress is saved in the browser on the device being used.
 
-The tracker updates the overall progress bar as topics are completed. A catalogue milestone is marked complete when all topics in that category are checked. Progress is saved in the browser on the device you use.
+The expandable catalogues below preserve the complete learning checklist. Select a topic to open its detailed guide; use the checkbox to track it in this repository.
 
-| Milestone | Catalogue |
-|---|---|
-| 01 | Foundation & Security |
-| 02 | Compute & Containers |
-| 03 | Storage & Databases |
-| 04 | Networking & Content Delivery |
-| 05 | DevOps & Automation |
-| 06 | AI & Machine Learning |
-| 07 | Monitoring & Cost |
+<details>
+<summary><strong>Bucket 1 — Foundation & Security</strong> · 10 topics</summary>
+
+- [ ] [AWS account and root MFA](services/aws-account-and-root-mfa.md)
+- [ ] [AWS IAM roles and policies](services/aws-iam-roles-and-policies.md)
+- [ ] [IAM service roles: EC2 to S3](services/iam-service-roles-ec2-to-s3.md)
+- [ ] [AWS Secrets Manager](services/aws-secrets-manager.md)
+- [ ] [Systems Manager Parameter Store](services/systems-manager-parameter-store.md)
+- [ ] [AWS Organizations and SCPs](services/aws-organizations-and-scps.md)
+- [ ] [AWS Control Tower](services/aws-control-tower.md)
+- [ ] [AWS Budgets and billing alarms](services/aws-budgets-and-billing-alarms.md)
+- [ ] [AWS KMS](services/aws-kms.md)
+- [ ] [AWS IAM Identity Center](services/aws-iam-identity-center.md)
+
+[Open bucket guide](buckets/01-foundation-security/README.md)
+
+</details>
+
+<details>
+<summary><strong>Bucket 2 — Compute & Containers</strong> · 10 topics</summary>
+
+- [ ] [Amazon EC2](services/amazon-ec2.md)
+- [ ] [EC2 Auto Scaling](services/ec2-auto-scaling.md)
+- [ ] [AWS Lambda](services/aws-lambda.md)
+- [ ] [Amazon ECS](services/amazon-ecs.md)
+- [ ] [AWS Fargate](services/aws-fargate.md)
+- [ ] [Amazon ECR](services/amazon-ecr.md)
+- [ ] [Amazon EKS](services/amazon-eks.md)
+- [ ] [Amazon EC2 GPU instances](services/amazon-ec2-gpu-instances.md)
+- [ ] [AWS Batch](services/aws-batch.md)
+- [ ] [AWS App Runner](services/aws-app-runner.md)
+
+[Open bucket guide](buckets/02-compute-containers/README.md)
+
+</details>
+
+<details>
+<summary><strong>Bucket 3 — Storage & Databases</strong> · 10 topics</summary>
+
+- [ ] [Amazon S3](services/amazon-s3.md)
+- [ ] [Amazon EBS](services/amazon-ebs.md)
+- [ ] [Amazon EFS](services/amazon-efs.md)
+- [ ] [Amazon RDS](services/amazon-rds.md)
+- [ ] [Amazon Aurora](services/amazon-aurora.md)
+- [ ] [Amazon DynamoDB](services/amazon-dynamodb.md)
+- [ ] [Amazon ElastiCache](services/amazon-elasticache.md)
+- [ ] [AWS Backup](services/aws-backup.md)
+- [ ] [S3 events and Lambda](services/s3-events-and-lambda.md)
+- [ ] [AWS Database Migration Service](services/aws-database-migration-service.md)
+
+[Open bucket guide](buckets/03-storage-databases/README.md)
+
+</details>
+
+<details>
+<summary><strong>Bucket 4 — Networking & Content Delivery</strong> · 10 topics</summary>
+
+- [ ] [Amazon VPC](services/amazon-vpc.md)
+- [ ] [Security Groups vs Network ACLs](services/security-groups-vs-network-acls.md)
+- [ ] [Application Load Balancer](services/application-load-balancer.md)
+- [ ] [Network Load Balancer](services/network-load-balancer.md)
+- [ ] [Amazon Route 53](services/amazon-route-53.md)
+- [ ] [Amazon CloudFront](services/amazon-cloudfront.md)
+- [ ] [Amazon API Gateway](services/amazon-api-gateway.md)
+- [ ] [AWS NAT Gateway](services/aws-nat-gateway.md)
+- [ ] [AWS Transit Gateway](services/aws-transit-gateway.md)
+- [ ] [AWS PrivateLink and VPC endpoints](services/aws-privatelink-and-vpc-endpoints.md)
+
+[Open bucket guide](buckets/04-networking-content-delivery/README.md)
+
+</details>
+
+<details>
+<summary><strong>Bucket 5 — DevOps & Automation</strong> · 10 topics</summary>
+
+- [ ] [AWS CloudFormation](services/aws-cloudformation.md)
+- [ ] [AWS CDK with Python](services/aws-cdk-with-python.md)
+- [ ] [AWS CDK with TypeScript](services/aws-cdk-with-typescript.md)
+- [ ] [AWS Systems Manager Session Manager](services/aws-systems-manager-session-manager.md)
+- [ ] [AWS CodePipeline](services/aws-codepipeline.md)
+- [ ] [AWS CodeBuild](services/aws-codebuild.md)
+- [ ] [AWS CodeDeploy](services/aws-codedeploy.md)
+- [ ] [Amazon EventBridge](services/amazon-eventbridge.md)
+- [ ] [Terraform on AWS](services/terraform-on-aws.md)
+- [ ] [GitHub Actions with AWS OIDC](services/github-actions-with-aws-oidc.md)
+
+[Open bucket guide](buckets/05-devops-automation/README.md)
+
+</details>
+
+<details>
+<summary><strong>Bucket 6 — AI & Machine Learning</strong> · 10 topics</summary>
+
+- [ ] [Amazon Bedrock](services/amazon-bedrock.md)
+- [ ] [Amazon Bedrock API and SDK](services/amazon-bedrock-api-and-sdk.md)
+- [ ] [Amazon SageMaker AI](services/amazon-sagemaker-ai.md)
+- [ ] [SageMaker AI endpoints](services/sagemaker-ai-endpoints.md)
+- [ ] [Amazon Textract](services/amazon-textract.md)
+- [ ] [Amazon Rekognition](services/amazon-rekognition.md)
+- [ ] [Amazon Comprehend](services/amazon-comprehend.md)
+- [ ] [Amazon Q Developer](services/amazon-q-developer.md)
+- [ ] [Retrieval-augmented generation (RAG)](services/retrieval-augmented-generation-rag.md)
+- [ ] [AI document-processing workflow](services/ai-document-processing-workflow.md)
+
+[Open bucket guide](buckets/06-ai-machine-learning/README.md)
+
+</details>
+
+<details>
+<summary><strong>Bucket 7 — Monitoring & Cost</strong> · 10 topics</summary>
+
+- [ ] [Amazon CloudWatch metrics, logs and alarms](services/amazon-cloudwatch-metrics-logs-and-alarms.md)
+- [ ] [CloudWatch dashboards](services/cloudwatch-dashboards.md)
+- [ ] [AWS Cost Explorer](services/aws-cost-explorer.md)
+- [ ] [AWS Budgets](services/aws-budgets.md)
+- [ ] [AWS CloudTrail](services/aws-cloudtrail.md)
+- [ ] [AWS Config](services/aws-config.md)
+- [ ] [AWS Trusted Advisor](services/aws-trusted-advisor.md)
+- [ ] [AWS Compute Optimizer](services/aws-compute-optimizer.md)
+- [ ] [AWS Service Quotas](services/aws-service-quotas.md)
+- [ ] [AWS Free Tier and free offers](services/aws-free-tier-and-free-offers.md)
+
+[Open bucket guide](buckets/07-monitoring-cost/README.md)
+
+</details>
 
 
 ## Seven portfolio projects
