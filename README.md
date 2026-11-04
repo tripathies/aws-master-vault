@@ -33,11 +33,13 @@ The master visual index is available as a **self-contained SVG** and an **editab
 
 ## Your AWS learning tracker
 
+[![OPEN INTERACTIVE AWS LEARNING DASHBOARD](https://img.shields.io/badge/OPEN%20INTERACTIVE%20AWS%20LEARNING%20DASHBOARD-Launch%20tracker-FF9900?style=for-the-badge)](https://tripathies.github.io/aws-master-vault/)
+
+**Open the dashboard to track your progress.** It has the live overall progress bar, seven catalogue milestones, topic checkboxes, search and progress export. Checking all ten topics in a catalogue completes that milestone automatically.
+
 **Learning loop:** understand the purpose and trade-offs → inspect the diagram → complete a lab → validate the result → clean up resources → explain the design.
 
-Use the [**interactive learning tracker →**](https://tripathies.github.io/aws-master-vault/) to record topic completion and monitor the overall progress bar. Each of the seven catalogue milestones turns complete when all ten topics in that catalogue are checked. Progress is saved in the browser on the device being used.
-
-The expandable catalogues below preserve the complete learning checklist. Select a topic to open its detailed guide; use the checkbox to track it in this repository.
+The expandable lists below are the **static reference checklist** and preserve all 70 learning topics. Select a topic title to open its detailed guide. For the live progress dashboard, use the orange launch link above.
 
 <details>
 <summary><strong>Bucket 1 — Foundation & Security</strong> · 10 topics</summary>
