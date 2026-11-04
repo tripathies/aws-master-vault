@@ -14,7 +14,11 @@
 
 The master visual index is available as a **self-contained SVG** and an **editable diagrams.net source**. It uses official AWS Architecture service icons for the domain anchors and full service names instead of alphabet-only markers.
 
-![AWS Cloud Mindmap — AWS Master Vault](https://raw.githubusercontent.com/tripathies/aws-master-vault/a5bb1cc6a00d0f3db1f9dfefbf81c16dd4b39e13/AWS-COMPONENT-MINDMAP.svg)
+<p align="center">
+  <a href="AWS-COMPONENT-MINDMAP.svg">
+    <img src="AWS-COMPONENT-MINDMAP.svg" alt="AWS Cloud Mindmap showing all 14 named AWS catalogue domains and 120 topics with official AWS Architecture icons" width="100%" />
+  </a>
+</p>
 
 - [Open the AWS component mind map (SVG)](AWS-COMPONENT-MINDMAP.svg)
 - [Edit the mind map in diagrams.net (draw.io)](AWS-COMPONENT-MINDMAP.drawio)
