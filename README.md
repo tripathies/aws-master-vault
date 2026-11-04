@@ -12,7 +12,7 @@
 
 ## AWS component catalogue mind map
 
-The master visual index is available in **SVG format** and can be opened directly in a browser or imported into a diagram editor.
+The master visual index is available as a **self-contained SVG** and an **editable diagrams.net source**. It uses official AWS Architecture service icons for the domain anchors and full service names instead of alphabet-only markers.
 
 ![AWS Cloud Mindmap — AWS Master Vault](https://raw.githubusercontent.com/tripathies/aws-master-vault/a5bb1cc6a00d0f3db1f9dfefbf81c16dd4b39e13/AWS-COMPONENT-MINDMAP.svg)
 
@@ -22,7 +22,7 @@ The master visual index is available in **SVG format** and can be opened directl
 
 Category symbols use AWS Architecture Icons. AWS permits use of its icon toolkit in architecture diagrams and materials; see the [official AWS icon guidance](https://aws.amazon.com/architecture/icons/).
 
-The mind map now uses named AWS domains with purpose-built vector symbols instead of alphabet markers. It separates cloud foundations, identity, networking, traffic delivery, compute, containers, storage, databases, integration, security, operations and cost, DevOps and migration, business continuity and disaster recovery, and AI engineering. Each topic appears in a named domain with its own canonical home. The existing learning guides and Escanor lab remain available while the service catalogue is expanded and reconciled against this domain model.
+The mind map uses named AWS domains with official AWS Architecture service icons instead of alphabet markers. It separates cloud foundations, identity, networking, traffic delivery, compute, containers, storage, databases, integration, security, operations and cost, DevOps and migration, business continuity and disaster recovery, and AI engineering. Each topic appears in a named domain with its own canonical home. The existing learning guides and Escanor lab remain available while the service catalogue is expanded and reconciled against this domain model.
 
 
 | <div align="center">📚 Learning tracker</div> | <div align="center">🏗️ End-to-end design</div> | <div align="center">🗺️ Diagram library</div> |
