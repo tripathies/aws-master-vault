@@ -1,15 +1,31 @@
 # Bucket 1 — Foundation & Security
 
-> AWS Master Vault learning tracker. This category uses AWS-native services, identity models, networking and governance terminology.
+> AWS Master Vault learning tracker. This category establishes the account, identity, governance, encryption, secrets and financial controls required before workloads are deployed.
 
-## Category architecture
+## Category mind map
 
-![Bucket 1 — Foundation & Security architecture](architecture.svg)
+![AWS Foundation & Security — eight-domain category mind map](architecture.svg)
 
-- [Editable category diagram](architecture.drawio)
-- [Mermaid source](architecture.mmd)
+The map groups the ten learning topics into eight architecture domains. The domains are conceptual learning groupings, not a mandatory deployment sequence.
+
+- [Open high-resolution SVG mind map](architecture.svg)
+- [Edit the mind map in diagrams.net](architecture.drawio)
+- [View Mermaid source](architecture.mmd)
 - [Visual architecture library](../../VISUAL-DIAGRAMS.md)
 - [Enterprise reference architecture](../../AWS-ENTERPRISE-REFERENCE-ARCHITECTURE.md)
+
+## Eight architecture domains
+
+| Domain | Included learning topics | Architecture focus |
+|---|---|---|
+| 1. Account protection | AWS account and root MFA | Root-user protection, MFA, no root access keys, break-glass access |
+| 2. Identity and access | AWS IAM roles and policies | Trust policies, permission policies, least privilege, permission boundaries |
+| 3. Workload identity | IAM service roles: EC2 to S3 | Instance profiles, temporary credentials, scoped service access |
+| 4. Organization governance | AWS Organizations and SCPs | Organizational units, account boundaries, policy inheritance |
+| 5. Landing zone | AWS Control Tower | Landing zone, Account Factory, guardrails, audit and log archive accounts |
+| 6. Secrets and configuration | AWS Secrets Manager; Systems Manager Parameter Store | Secret lifecycle, rotation, SecureString, configuration hierarchy |
+| 7. Encryption and keys | AWS KMS | Key policies, grants, rotation, envelope encryption |
+| 8. Workforce and financial controls | AWS IAM Identity Center; AWS Budgets and billing alarms | Federated access, permission sets, cost thresholds and notifications |
 
 ## Component checklist
 
@@ -27,15 +43,29 @@
 | AWS IAM Identity Center | [Open guide](../../services/aws-iam-identity-center.md) | [View](../../services/aws-iam-identity-center/architecture.svg) | [draw.io](../../services/aws-iam-identity-center/architecture.drawio) |
 
 ## Practice workflow
+
 1. Read the official documentation and note service scope, limits and alternatives.
 2. Map identity, network paths, data flows, dependencies and ownership.
 3. Complete a sandbox lab and capture validation evidence.
 4. Test an access-denied or failure scenario where safe.
 5. Record monitoring, cost observations and teardown proof.
 
+## Architecture guardrails to understand
+
+- Root-user MFA is a baseline control; avoid root access keys and use root only for tasks that require it.
+- IAM trust policies determine who can assume a role; permission policies determine what the role can do.
+- Service control policies (SCPs) define maximum available permissions for affected principals; they do not grant permissions.
+- Prefer IAM Identity Center and federated workforce access over distributing long-lived IAM user credentials.
+- Secrets Manager and Parameter Store solve overlapping but different configuration and secret-lifecycle needs; choose deliberately.
+- KMS key policies are central to key authorization; validate both key policy and IAM policy behavior.
+- AWS Budgets and billing alarms notify on configured conditions; they are not hard spend caps.
+
 ## Official references
-- [AWS documentation](https://docs.aws.amazon.com/)
-- [Architecture framework](https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html)
-- [Pricing](https://aws.amazon.com/pricing/)
+
+- [AWS IAM best practices](https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html)
+- [AWS Organizations and SCPs](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_introduction.html)
+- [AWS Control Tower](https://docs.aws.amazon.com/controltower/latest/userguide/what-is-control-tower.html)
+- [AWS KMS](https://docs.aws.amazon.com/kms/latest/developerguide/overview.html)
+- [AWS pricing and billing](https://aws.amazon.com/pricing/)
 
 > Diagrams are conceptual learning resources, not production-certified designs. Verify service capabilities, IAM permissions, network behavior, quotas, regional availability and pricing before deployment.
