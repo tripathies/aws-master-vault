@@ -1,22 +1,34 @@
-flowchart TB
-  ROOT["AWS FOUNDATION & SECURITY<br/>Trusted accounts · Identity · Guardrails · Secrets · Cost controls"]
-  D1["1. Account protection & root security<br/>AWS account and root MFA<br/>Root MFA · No root access keys · Break-glass"]
-  D2["2. Identity & access management<br/>IAM roles and policies<br/>Trust policies · Least privilege · Permission boundaries"]
-  D3["3. Workload identity & service access<br/>IAM service roles: EC2 to S3<br/>Instance profiles · Temporary credentials"]
-  D4["4. Organization governance<br/>AWS Organizations and SCPs<br/>OUs · Account boundaries · Policy inheritance"]
-  D5["5. Landing zone & account vending<br/>AWS Control Tower<br/>Account Factory · Guardrails · Audit / log archive"]
-  D6["6. Secrets & configuration<br/>Secrets Manager · Parameter Store<br/>Rotation · SecureString · Parameter hierarchy"]
-  D7["7. Encryption & key management<br/>AWS KMS<br/>Key policies · Grants · Rotation · Envelope encryption"]
-  D8["8. Workforce access & financial guardrails<br/>IAM Identity Center · AWS Budgets<br/>Federation · Cost thresholds · Notifications"]
-  ROOT --> D1
-  ROOT --> D2
-  ROOT --> D3
-  ROOT --> D4
-  ROOT --> D5
-  ROOT --> D6
-  ROOT --> D7
-  ROOT --> D8
-  D4 -. governance baseline .-> D5
-  D2 -. authorizes workload access .-> D3
-  D7 -. protects supported secrets and data .-> D6
-  D8 -. workforce and spend controls .-> ROOT
+mindmap
+  root((AWS Foundation & Security))
+    1. Account security
+      AWS account
+      Root user security
+      Recovery access
+    2. Identity & access
+      IAM roles & policies
+      Trust policies
+      Permission boundaries
+    3. Workload IAM
+      EC2 instance profiles
+      Temporary credentials
+      Service-to-service access
+    4. Secrets & keys
+      Secrets Manager
+      Systems Manager Parameter Store
+      AWS KMS
+    5. Org governance
+      AWS Organizations
+      Service control policies
+      Account baselines
+    6. Landing zone
+      AWS Control Tower
+      Account Factory
+      Guardrails
+    7. Workforce IAM
+      IAM Identity Center
+      Federation & SSO
+      Permission sets
+    8. FinOps guardrails
+      AWS Budgets
+      Billing alarms
+      Cost visibility
