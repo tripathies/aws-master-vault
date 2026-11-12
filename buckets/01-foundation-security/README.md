@@ -1,71 +1,43 @@
 # Bucket 1 — Foundation & Security
 
-> AWS Master Vault learning tracker. This category establishes the account, identity, governance, encryption, secrets and financial controls required before workloads are deployed.
+> AWS Master Vault category study map. This category establishes the account, identity, governance, workload access, secrets, encryption and financial controls expected before workloads are deployed.
 
 ## Category mind map
 
-![AWS Foundation & Security — eight-domain category mind map](architecture.svg)
+![AWS Foundation & Security — portrait category mind map](architecture.svg)
 
-The map groups the ten learning topics into eight architecture domains. The domains are conceptual learning groupings, not a mandatory deployment sequence.
+The map follows the visual study-map standard: a central topic, eight numbered colour-coded branches, and three concise learning cards per branch. These are conceptual learning domains, not a mandatory deployment sequence.
 
-- [Open high-resolution SVG mind map](architecture.svg)
-- [Edit the mind map in diagrams.net](architecture.drawio)
-- [View Mermaid source](architecture.mmd)
-- [Visual architecture library](../../VISUAL-DIAGRAMS.md)
-- [Enterprise reference architecture](../../AWS-ENTERPRISE-REFERENCE-ARCHITECTURE.md)
+## Eight learning domains
 
-## Eight architecture domains
+1. **Account security** — AWS account boundary, root-user MFA, recovery access and break-glass controls.
+2. **Identity & access** — IAM roles and policies, trust policies, least privilege and permission boundaries.
+3. **Workload IAM** — EC2 instance profiles, temporary credentials and service-to-service access.
+4. **Secrets & keys** — Secrets Manager, Systems Manager Parameter Store and AWS KMS.
+5. **Org governance** — AWS Organizations, organizational units, service control policies and account baselines.
+6. **Landing zone** — AWS Control Tower, Account Factory and preventive/detective guardrails.
+7. **Workforce IAM** — IAM Identity Center, federation, single sign-on and permission sets.
+8. **FinOps guardrails** — AWS Budgets, billing alarms, cost allocation and visibility.
 
-| Domain | Included learning topics | Architecture focus |
-|---|---|---|
-| 1. Account protection | AWS account and root MFA | Root-user protection, MFA, no root access keys, break-glass access |
-| 2. Identity and access | AWS IAM roles and policies | Trust policies, permission policies, least privilege, permission boundaries |
-| 3. Workload identity | IAM service roles: EC2 to S3 | Instance profiles, temporary credentials, scoped service access |
-| 4. Organization governance | AWS Organizations and SCPs | Organizational units, account boundaries, policy inheritance |
-| 5. Landing zone | AWS Control Tower | Landing zone, Account Factory, guardrails, audit and log archive accounts |
-| 6. Secrets and configuration | AWS Secrets Manager; Systems Manager Parameter Store | Secret lifecycle, rotation, SecureString, configuration hierarchy |
-| 7. Encryption and keys | AWS KMS | Key policies, grants, rotation, envelope encryption |
-| 8. Workforce and financial controls | AWS IAM Identity Center; AWS Budgets and billing alarms | Federated access, permission sets, cost thresholds and notifications |
+## Map source files
 
-## Component checklist
+- [SVG mind map](architecture.svg)
+- [Editable diagrams.net file](architecture.drawio)
+- [Mermaid mind map source](architecture.mmd)
 
-| Topic | Learning guide | Diagram (SVG) | Editable diagram |
-|---|---|---|---|
-| AWS account and root MFA | [Open guide](../../services/aws-account-and-root-mfa.md) | [View](../../services/aws-account-and-root-mfa/architecture.svg) | [draw.io](../../services/aws-account-and-root-mfa/architecture.drawio) |
-| AWS IAM roles and policies | [Open guide](../../services/aws-iam-roles-and-policies.md) | [View](../../services/aws-iam-roles-and-policies/architecture.svg) | [draw.io](../../services/aws-iam-roles-and-policies/architecture.drawio) |
-| IAM service roles: EC2 to S3 | [Open guide](../../services/iam-service-roles-ec2-to-s3.md) | [View](../../services/iam-service-roles-ec2-to-s3/architecture.svg) | [draw.io](../../services/iam-service-roles-ec2-to-s3/architecture.drawio) |
-| AWS Secrets Manager | [Open guide](../../services/aws-secrets-manager.md) | [View](../../services/aws-secrets-manager/architecture.svg) | [draw.io](../../services/aws-secrets-manager/architecture.drawio) |
-| Systems Manager Parameter Store | [Open guide](../../services/systems-manager-parameter-store.md) | [View](../../services/systems-manager-parameter-store/architecture.svg) | [draw.io](../../services/systems-manager-parameter-store/architecture.drawio) |
-| AWS Organizations and SCPs | [Open guide](../../services/aws-organizations-and-scps.md) | [View](../../services/aws-organizations-and-scps/architecture.svg) | [draw.io](../../services/aws-organizations-and-scps/architecture.drawio) |
-| AWS Control Tower | [Open guide](../../services/aws-control-tower.md) | [View](../../services/aws-control-tower/architecture.svg) | [draw.io](../../services/aws-control-tower/architecture.drawio) |
-| AWS Budgets and billing alarms | [Open guide](../../services/aws-budgets-and-billing-alarms.md) | [View](../../services/aws-budgets-and-billing-alarms/architecture.svg) | [draw.io](../../services/aws-budgets-and-billing-alarms/architecture.drawio) |
-| AWS KMS | [Open guide](../../services/aws-kms.md) | [View](../../services/aws-kms/architecture.svg) | [draw.io](../../services/aws-kms/architecture.drawio) |
-| AWS IAM Identity Center | [Open guide](../../services/aws-iam-identity-center.md) | [View](../../services/aws-iam-identity-center/architecture.svg) | [draw.io](../../services/aws-iam-identity-center/architecture.drawio) |
+## Important architecture guardrails
 
-## Practice workflow
-
-1. Read the official documentation and note service scope, limits and alternatives.
-2. Map identity, network paths, data flows, dependencies and ownership.
-3. Complete a sandbox lab and capture validation evidence.
-4. Test an access-denied or failure scenario where safe.
-5. Record monitoring, cost observations and teardown proof.
-
-## Architecture guardrails to understand
-
-- Root-user MFA is a baseline control; avoid root access keys and use root only for tasks that require it.
+- Protect the root user with MFA and do not create root access keys.
+- Prefer roles and temporary credentials over long-lived access keys.
 - IAM trust policies determine who can assume a role; permission policies determine what the role can do.
-- Service control policies (SCPs) define maximum available permissions for affected principals; they do not grant permissions.
-- Prefer IAM Identity Center and federated workforce access over distributing long-lived IAM user credentials.
-- Secrets Manager and Parameter Store solve overlapping but different configuration and secret-lifecycle needs; choose deliberately.
-- KMS key policies are central to key authorization; validate both key policy and IAM policy behavior.
-- AWS Budgets and billing alarms notify on configured conditions; they are not hard spend caps.
+- Service control policies define the maximum permissions available in an organization. **They do not grant permissions.**
+- KMS key policies are central to authorizing use of customer-managed keys.
+- Secrets Manager and Systems Manager Parameter Store have overlapping but distinct lifecycle and configuration use cases.
+- AWS Budgets and billing alarms provide alerts; they are **not hard spending caps**.
 
-## Official references
+## Suggested study workflow
 
-- [AWS IAM best practices](https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html)
-- [AWS Organizations and SCPs](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_introduction.html)
-- [AWS Control Tower](https://docs.aws.amazon.com/controltower/latest/userguide/what-is-control-tower.html)
-- [AWS KMS](https://docs.aws.amazon.com/kms/latest/developerguide/overview.html)
-- [AWS pricing and billing](https://aws.amazon.com/pricing/)
-
-> Diagrams are conceptual learning resources, not production-certified designs. Verify service capabilities, IAM permissions, network behavior, quotas, regional availability and pricing before deployment.
+1. Read the eight branches and identify the controls relevant to your account model.
+2. Open the linked service guides and work through the concepts and hands-on exercises.
+3. Validate current AWS behaviour, quotas, pricing and service limits against official AWS documentation.
+4. Apply controls in a sandbox before promoting them into shared or production accounts.
