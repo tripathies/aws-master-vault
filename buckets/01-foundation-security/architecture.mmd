@@ -1,22 +1,22 @@
 flowchart TB
-  ROOT["AWS Organizations / Account Boundary<br/>IAM • SCPs • Regions • Tags • Budgets"]
-  S0["AWS account and root MFA"]
-  S1["AWS IAM roles and policies"]
-  S2["IAM service roles: EC2 to S3"]
-  S3["AWS Secrets Manager"]
-  S4["Systems Manager Parameter Store"]
-  S5["AWS Organizations and SCPs"]
-  S6["AWS Control Tower"]
-  S7["AWS Budgets and billing alarms"]
-  S8["AWS KMS"]
-  S9["AWS IAM Identity Center"]
-  ROOT --> S0
-  ROOT --> S1
-  ROOT --> S2
-  ROOT --> S3
-  ROOT --> S4
-  ROOT --> S5
-  ROOT --> S6
-  ROOT --> S7
-  ROOT --> S8
-  ROOT --> S9
+  ROOT["AWS FOUNDATION & SECURITY<br/>Trusted accounts · Identity · Guardrails · Secrets · Cost controls"]
+  D1["1. Account protection & root security<br/>AWS account and root MFA<br/>Root MFA · No root access keys · Break-glass"]
+  D2["2. Identity & access management<br/>IAM roles and policies<br/>Trust policies · Least privilege · Permission boundaries"]
+  D3["3. Workload identity & service access<br/>IAM service roles: EC2 to S3<br/>Instance profiles · Temporary credentials"]
+  D4["4. Organization governance<br/>AWS Organizations and SCPs<br/>OUs · Account boundaries · Policy inheritance"]
+  D5["5. Landing zone & account vending<br/>AWS Control Tower<br/>Account Factory · Guardrails · Audit / log archive"]
+  D6["6. Secrets & configuration<br/>Secrets Manager · Parameter Store<br/>Rotation · SecureString · Parameter hierarchy"]
+  D7["7. Encryption & key management<br/>AWS KMS<br/>Key policies · Grants · Rotation · Envelope encryption"]
+  D8["8. Workforce access & financial guardrails<br/>IAM Identity Center · AWS Budgets<br/>Federation · Cost thresholds · Notifications"]
+  ROOT --> D1
+  ROOT --> D2
+  ROOT --> D3
+  ROOT --> D4
+  ROOT --> D5
+  ROOT --> D6
+  ROOT --> D7
+  ROOT --> D8
+  D4 -. governance baseline .-> D5
+  D2 -. authorizes workload access .-> D3
+  D7 -. protects supported secrets and data .-> D6
+  D8 -. workforce and spend controls .-> ROOT
